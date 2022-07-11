@@ -1,3 +1,11 @@
 baseURL: https://coopdegallix.ca/
 languageCode: fr-ca
 title: Coop de Gallix
+
+
+# For more info on Modules -> https://gohugo.io/hugo-modules/configuration/
+module:
+  hugoVersion:
+    min: 0.92.0
+  imports:
+  - path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5
