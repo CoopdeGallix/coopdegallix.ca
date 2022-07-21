@@ -1,0 +1,108 @@
+<head>
+  <meta charset="utf-8">
+  <!-- Blocks may include default content. -->
+  <title>
+    {{ block "title" . }}
+    {{ .Site.Title }}
+    {{ end }}
+  </title>
+  <!-- Favicon -->
+<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<!-- Fontawesome -->
+<link type="text/css" href="vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+
+  {{/* Load Bootstrap SCSS. */}}
+  {{ $options := dict "enableSourceMap" true }}
+  {{ if hugo.IsProduction}}
+  {{ $options := dict "enableSourceMap" false "outputStyle" "compressed" }}
+  {{ end }}
+  {{ $styles := resources.Get "scss/pixel.scss" }}
+  {{ $styles = $styles | resources.ToCSS $options }}
+  {{ if hugo.IsProduction }}
+  {{ $styles = $styles | fingerprint }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+
+  {{/* Load Bootstrap JS. */}}
+  {{ $bootstrap := resources.Get "vendor/bootstrap/bootstrap.bundle.js" }}
+  {{ $indexjs := resources.Get "js/index.js" }}
+  {{ $pixel_js := resources.Get "js/pixel.js" }}
+  {{ $js := slice $bootstrap $pixel_js $indexjs| resources.Concat "js/global.js" }}
+  {{ $params := dict }}
+  {{ $sourceMap := cond hugo.IsProduction "" "inline" }}
+  {{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2018" "params" $params }}
+  {{ $js = $js | js.Build $opts }}
+  {{ if hugo.IsProduction }}
+  {{ $js = $js | fingerprint }}
+  {{ end }}
+  <script src="{{ $js.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $js.Data.Integrity }}"{{ end }}></script>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+  
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+  
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+  
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+  
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+  
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+    .icon-list li::before {
+      display: block;
+      flex-shrink: 0;
+      width: 1.5em;
+      height: 1.5em;
+      margin-right: .5rem;
+      content: "";
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23212529' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E") no-repeat center center / 100% auto;
+    }
+    
+  </style>
+</head>

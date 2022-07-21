@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+  <div class="container">
+    <a class="navbar-brand me-lg-5" href="{{ "/" | absLangURL }}">
+      <img class="navbar-brand-dark d-inline-block" src="{{ .Site.Params.nav.logo_light }}" alt="Logo light" width="30" height="24">
+      {{/*  <img class="navbar-brand-light d-inline-block" src="{{ .Site.Params.nav.logo_dark }}" alt="Logo dark" width="30" height="24">  */}}
+      {{ .Site.Params.nav.title }}
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+        <li class="nav-item dropdown {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+          <a class="nav-link dropdown-toggle"  id="dropdown-{{ .Identifier }}" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ .Pre }}
+            {{ .Name }}
+          </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-{{ .Identifier }}">
+              {{ range .Children }}
+              <li>
+                <a class="dropdown-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </li>
+        {{ else }}
+        <li class="nav-item">
+          <a class="nav-link {{ with .Params.class }}{{ . }}{{ end }}{{ if $currentPage.HasMenuCurrent "main" . }} active{{ end }}" href="{{ .URL }}" title="{{ .Title }}" class="{{ with .Params.class }}{{ . }}{{ end }}">
+            {{ .Pre }}
+            {{- .Name -}}
+          </a>
+        </li>
+        {{ end }}
+      {{ end }}
+
+      </ul>
+      <div class="d-flex align-items-center">
+        <a href="{{ .Site.Params.nav.btn.url }}" target="_blank" class="btn btn-outline-gray-100 d-none d-lg-inline me-md-3">
+          <span class="fas fa-shopping-cart me-2"></span></span> {{ .Site.Params.nav.btn.title }}</a>
+      </div>
+    </div>
+  </div>
+</nav>

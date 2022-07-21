@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "fr" }}">
+  {{ partial "head" . }}
+
+  <body>
+    <!-- Code that all your templates share, like a header -->
+    {{ partial "nav.html" . }}
+    <main>
+    {{/*  {{ partial "_preloader.html" . }}  */}}
+    
+    {{ block "main" . }}
+    <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+  </main>
+    {{ block "footer" . }}
+    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{ end }}
+    {{ partial "_footer.html" . }}
+    {{ partial "_scripts.html" . }}
+  </body>
+</html>

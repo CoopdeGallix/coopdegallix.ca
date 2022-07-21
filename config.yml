@@ -1,11 +1,56 @@
 baseURL: https://coopdegallix.ca/
+defaultContentLanguage: fr
 languageCode: fr-ca
 title: Coop de Gallix
 
+# navbar
+params:
+  nav:
+    title: Coop de Gallix
+    logo_light: /img/brand/light.svg
+    logo_dark: /img/brand/dark.svg
+    btn:
+      title: Devenir membre de la Coop
+      url: /inscription
+    
+  networking:
+    site: coopdegallix.ca
+    fb: CoopdeGallix
+    insta: CoopdeGallix
+
+menu:
+  main:
+  - name: À propos
+    title: À propos section
+    url: /a-propos/
+    weight: 100
+  - name: Les nouvelles
+    title: News section
+    url: /nouvelles/
+    weight: 20
+  - name: about hugo
+    params:
+      class: text-danger
+    pre: <i class='fa fa-heart'></i>
+    url: /test/
+    weight: -110
+    parent: Inscription
+
+  # - name: About FORRT
+  #   url: ""
+  #   weight: 10
+  #   identifier: about
+  # - name: About FORRT
+  #   url: /about/us
+  #   weight: 11
+  #   parent: about
 
 # For more info on Modules -> https://gohugo.io/hugo-modules/configuration/
 module:
   hugoVersion:
     min: 0.92.0
   imports:
-  - path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5
+  - path: github.com/samguay/hugo-mod-bootstrap-scss/v5
+  mounts:
+  - source: assets
+    target: assets
