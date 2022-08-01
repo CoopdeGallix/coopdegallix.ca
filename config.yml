@@ -3,38 +3,71 @@ defaultContentLanguage: fr
 languageCode: fr-ca
 title: Coop de Gallix
 
+
 # navbar
 params:
   nav:
     title: Coop de Gallix
     logo_light: /img/brand/light.svg
+    logo_light_alt: Logo light
     logo_dark: /img/brand/dark.svg
+    logo_dark_alt: Logo dark
     btn:
-      title: Devenir membre de la Coop
+      title: Devenir membre
       url: /inscription
-    
+
   networking:
     site: coopdegallix.ca
     fb: CoopdeGallix
     insta: CoopdeGallix
 
-menu:
-  main:
-  - name: À propos
-    title: À propos section
-    url: /a-propos/
-    weight: 100
-  - name: Les nouvelles
-    title: News section
-    url: /nouvelles/
-    weight: 20
-  - name: about hugo
-    params:
-      class: text-danger
-    pre: <i class='fa fa-heart'></i>
-    url: /test/
-    weight: -110
-    parent: Inscription
+defaultContentLanguage: fr
+languages:
+  fr:
+    languageName: Français
+    contentDir: content/fr
+    weight: 1
+    menu:
+      main:
+      - name: À propos
+        url: /a-propos/
+        weight: 10
+      # - name: Mission
+      #   url: /a-propos/#mission
+      #   weight: 10
+      #   parent: À propos
+      # - name: Équipe
+      #   url: /a-propos/#equipe
+      #   weight: 10
+      #   parent: À propos
+      - name: Inscription
+        params:
+          class:
+        pre:
+        url: /inscription/
+        weight: 20
+      - name: Dernières nouvelles
+        url: /nouvelles/
+        weight: 30
+
+  en:
+    languageName: English
+    contentDir: content/en
+    weight: 2
+    menu:
+      main:
+      - name: About
+        url: /about/
+        weight: 10
+      - name: Membership
+        params:
+          class:
+        pre:
+        url: /register/
+        weight: 20
+      - name: Latest news
+        url: /news/
+        weight: 30
 
   # - name: About FORRT
   #   url: ""
