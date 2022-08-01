@@ -4,7 +4,11 @@
 
   <body>
     <!-- Code that all your templates share, like a header -->
-    {{ partial "_navigation.html" . }}
+    <header class="header-global">
+
+      {{ partial "nav.html" . }}
+    </header>
+
     <main>
     {{/*  {{ partial "_preloader.html" . }}  */}}
     
