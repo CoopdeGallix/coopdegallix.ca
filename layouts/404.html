@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="section-header overflow-hidden pt-7 pb-7">
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center text-white d-flex align-items-center justify-content-center text-dark">
+      <div><a href="{{ "/" | absLangURL }}"><img class="img-fluid w-50"
+            src="/img/illustrations/404-fp.svg" alt="girl illustration"></a>
+        <h1 class="mt-4">Erreur 404 -<span class="fw-bolder">  page
+          non trouvée.</span></h1>
+        <p class="lead my-4 px-lg-11">Le lien que vous avez suivi semble brisé.
+          Si vous pensez qu'il s'agit une erreur, merci de nous aviser en <a href=" {{ "/contact" | absLangURL }}">nous contactant.</a></p>
+          <a class="btn btn-white animate-hover"
+          href="{{ "/" | absLangURL }}"><span
+            class="fas fa-chevron-left me-3 ps-2 animate-left-3"></span>Retour à la page d'accueil</a>
+      </div>
+    </div>
+  </div>
+  <div class="row pt-4">
+    <div class="col-12">
+      <p class="text-center text-gray-400">
+        <a href="https://storyset.com/web">Illustration par Storyset</a>
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+{{end}}
