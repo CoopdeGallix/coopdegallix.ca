@@ -10,7 +10,7 @@
     </header>
 
     <main>
-    {{/*  {{ partial "_preloader.html" . }}  */}}
+    {{ partial "preloader.html" . }}
     
     {{ block "main" . }}
     <!-- The part of the page that begins to differ between templates -->
@@ -19,7 +19,7 @@
     {{ block "footer" . }}
     <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
     {{ end }}
-    {{ partial "_footer.html" . }}
-    {{ partial "_scripts.html" . }}
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
   </body>
 </html>

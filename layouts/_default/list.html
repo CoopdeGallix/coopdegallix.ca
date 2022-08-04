@@ -1,9 +1,22 @@
 {{ define "main" }}
-<h1>Posts</h1>
-  {{ range .Pages }}
-  <article>
-    <h2>{{ .Title }}</h2>
-    {{ .Content }}
-  </article>
-  {{ end }}
+<section class="section-header">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center">
+              <h1 class="display-2 mb-3">{{ .Title }}</h1>
+              <p>{{.Content}}</p>
+              <ul class="list-group list-group-flush">
+
+                {{ range .Pages }}
+                <li class="list-group-item">
+                  <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                  <time>{{ .Date | time.Format ":date_medium" }}</time>
+                </li>
+                
+                {{ end }}
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
 {{ end }}

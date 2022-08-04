@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <!-- Hero -->
+  <section class="section section-header pb-11 bg-primary text-white">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-12 col-xl-8 text-center">
+                  <h1 class="display-2 mb-3">Nos coordonnées</h1>
+                  <p class="lead text-center">Tous les moyens sont bons pour entrer en communication avec nous, nous voulons entendre vos idées, conseils, opinions à propos du projet!</p>
+                  <p class="lead text-center">Le plus simple est d'utiliser le formulaire situé au bas de la page ou bien nous écrire directement à <a href="mailto:info@coopdegallix.ca">info@coopdegallix.ca</a>.</p>
+
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Section -->
+          <div class="section py-0">
+            <div class="container mt-n10">
+              <div class="row">
+                <div class="col-12">
+                  <iframe class="map rounded" id="gmap_canvas" src="https://maps.google.com/maps?q=gallix%20&t=&z=10&ie=UTF8&iwloc=&output=embed"></iframe>
+                  <p class="lead text-center">Pour le moment, la COOP n'a pas d'adresse postale, donc Gallix est montré sur la carte.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  {{ partial "components/forms.html" . }}
+
+{{ end }}
