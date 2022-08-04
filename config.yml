@@ -1,11 +1,8 @@
 baseURL: https://coopdegallix.ca/
-defaultContentLanguage: fr
-languageCode: fr-ca
 title: Coop de Gallix
-
-
 # navbar
 params:
+  fullname: Coopérative de solidarité de Gallix
   nav:
     title: Coop de Gallix
     logo_light: /img/brand/light.svg
@@ -18,10 +15,26 @@ params:
 
   networking:
     site: coopdegallix.ca
-    fb: CoopdeGallix
-    insta: CoopdeGallix
+    social:
+    - link: https://facebook.com/CoopdeGallix
+      icon: fab fa-facebook
+    - link: https://instagram.com/CoopdeGallix
+      icon: fab fa-instagram
+    - link: https://github.com/CoopdeGallix
+      icon: fab fa-github
+
+  footer:
+    title: Coopérative de solidarité de Gallix **|** <br> Une présence active dans notre communauté
+    newsletter:
+      title: Abonnez-vous à notre infolettre
+      subtitle: |
+        Nous enverrons une infolettre résumant les derniers avancements <span class="fw-bolder">au maximum une fois par mois.</span>
+        <br> PS: Nous ne divulguerons jamais votre adresse.
+      btn: M'abonner
+      text_note: Une page ouvrira afin de confirmer que vous n'êtes pas un robot 🤖!
 
 defaultContentLanguage: fr
+languageCode: fr-ca
 languages:
   fr:
     languageName: Français
@@ -46,28 +59,31 @@ languages:
         pre:
         url: /inscription/
         weight: 20
-      - name: Dernières nouvelles
+      - name: Nouvelles
         url: /nouvelles/
         weight: 30
+      - name: Contact
+        url: /contact/
+        weight: 40
 
   en:
     languageName: English
     contentDir: content/en
     weight: 2
-    menu:
-      main:
-      - name: About
-        url: /about/
-        weight: 10
-      - name: Membership
-        params:
-          class:
-        pre:
-        url: /register/
-        weight: 20
-      - name: Latest news
-        url: /news/
-        weight: 30
+    # menu:
+    #   main:
+    #   - name: About
+    #     url: /about/
+    #     weight: 10
+    #   - name: Membership
+    #     params:
+    #       class:
+    #     pre:
+    #     url: /register/
+    #     weight: 20
+    #   - name: Latest news
+    #     url: /news/
+    #     weight: 30
 
   # - name: About FORRT
   #   url: ""
@@ -78,12 +94,19 @@ languages:
   #   weight: 11
   #   parent: about
 
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 # For more info on Modules -> https://gohugo.io/hugo-modules/configuration/
 module:
   hugoVersion:
     min: 0.92.0
   imports:
-  - path: github.com/samguay/hugo-mod-bootstrap-scss/v5
-  mounts:
-  - source: assets
-    target: assets
+    # - path: github.com/twbs/icons
+    #   mounts:
+    #   - source: icons
+    #     target: assets/hugo-icons/icons
+    - path: github.com/samguay/hugo-mod-bootstrap-scss/v5
