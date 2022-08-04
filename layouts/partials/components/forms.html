@@ -1,0 +1,63 @@
+  <!-- Section -->
+  <section class="section section-lg pt-6">
+    <div class="container">
+        <div class="row justify-content-center mb-5 mb-lg-6">
+            <div class="col-12 col-lg-8">
+                <!-- Contact Card -->
+                <div class="card border-0 p-2 p-md-3 p-lg-4">
+                    <div class="card-header bg-white border-0 text-center">
+                        <h2>Il nous fera plaisir de discuter avec vous!</h2>
+                    </div>
+                    <div class="card-body px-0 pt-0">
+                      <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="555e5e4b-6587-4183-9723-1774ecdeef16">
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label for="name">Votre nom</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon3"><span class="fas fa-user-circle"></span></span>
+                                    <input type="text" class="form-control" placeholder="Prénom Nom" id="name" name="name" required>
+                                </div>
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label for="email">Votre adresse de courriel</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon4"><span class="fas fa-envelope"></span></span>
+                                    <input type="email" class="form-control" placeholder="adresse@exemple.com" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                              <label for="email">Votre numéro de téléphone <span class="text-gray-500"> (optionel)</span> </label>
+                              <div class="input-group">
+                                  <span class="input-group-text" id="basic-addon4"><span class="fas fa-phone"></span></span>
+                                  <input type="phone" class="form-control" placeholder="418-962-1234" id="phone" name="phone" optional>
+                              </div>
+                            </div>
+                            <!-- End of Form -->
+                            <div class="mb-4">
+                                <label for="message">Votre message</label>
+                                <textarea placeholder="Écrivez-vous message ici" class="form-control" id="message" rows="4" name="message" required></textarea>
+                                <!-- If we receive data in this field submission will be ignored -->
+                                <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
+                              </div>
+                            <!-- End of Form -->
+                            <div class="d-grid">
+                                <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+                                <!-- If you want form to redirect to a specific url after submission -->
+                                <input type="hidden" name="redirectTo" value="{{ "/succes" | absLangURL }}"> <!-- Optional -->
+                                <button type="submit" class="btn rounded btn-secondary">Envoyer le message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End of Contact Card -->
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End of section -->

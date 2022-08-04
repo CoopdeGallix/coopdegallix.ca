@@ -15,7 +15,7 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <!-- Fontawesome -->
-<link type="text/css" href="vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link type="text/css" href="{{ "/vendor/fortawesome/fontawesome-free/css/all.min.css" | absURL}}" rel="stylesheet">
 
 
   {{/* Load Bootstrap SCSS. */}}
@@ -34,7 +34,7 @@
   {{ $bootstrap := resources.Get "vendor/bootstrap/bootstrap.bundle.js" }}
   {{ $indexjs := resources.Get "js/index.js" }}
   {{ $pixel_js := resources.Get "js/pixel.js" }}
-  {{ $js := slice $bootstrap $pixel_js $indexjs| resources.Concat "js/global.js" }}
+  {{ $js := slice $bootstrap $pixel_js $indexjs | resources.Concat "js/global.js" }}
   {{ $params := dict }}
   {{ $sourceMap := cond hugo.IsProduction "" "inline" }}
   {{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2018" "params" $params }}

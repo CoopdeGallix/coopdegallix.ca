@@ -1,0 +1,37 @@
+{{ define "main" }}
+<section class="section section-header pb-6 bg-primary text-white overflow-hidden z-2">
+  <div class="container z-2">
+    <div class="row justify-content-center mb-2">
+      <div class="col-lg-8 col-xl-8">
+        <div class="text-center">
+          <h1 class="display-2 mb-3">Coop de Gallix is coming soon.</h1>
+          <p class="lead text-muted">Our English version of the website is still <span class="text-italic">under
+              construction</span>.
+              <br> You can still browse the French version in the meantime.<br>
+              <strong>Subscribe</strong> to get an email once the English version is out.</p>
+        </div>
+        <form class="row d-flex align-items-top justify-content-center mt-5"
+              action="https://api.staticforms.xyz/submit" method="post">
+          <div class="col-12 col-xl-10">
+            <input type="hidden" name="accessKey" value="555e5e4b-6587-4183-9723-1774ecdeef16">
+            <div class="form-group"><label class="h6" for="email">Email address</label>
+              <div class="d-flex flex-row justify-content-center"><input
+                  class="form-control form-control-lg border-0 rounded" placeholder="email@website.com"
+                  id="email" name="email" required>
+                  <input type="hidden" name="subject" value="Coming soon in English subscriber" />
+                  <!-- If we receive data in this field submission will be ignored -->
+                  <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
+                  <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+                  <!-- If you want form to redirect to a specific url after submission -->
+                  <input type="hidden" name="redirectTo" value="{{ "/succes" | absLangURL }}"> <!-- Optional -->
+                  <button type="submit"
+                  class="btn btn-tertiary btn-lg ms-2">Subscribe</button></div>
+            </div>
+            <p class="small text-left text-muted mt-2">No spam. We swear!</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

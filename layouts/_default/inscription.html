@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<div class="section section-sm bg-white pt-5 pt-lg-6">
+  <article class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <h1 class="display-2 mb-3">{{ .Title }}</h1>
+        {{ .Content }}
+      </div>
+    </div>
+  </article>
+
+{{ with .Params.FAQ}}
+{{ partial "components/_accordions.html" . }}
+{{ end }}
+{{ end }}
