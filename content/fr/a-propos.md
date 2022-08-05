@@ -69,16 +69,16 @@ CA:
     img: /img/illustrations/smile.svg
     text:
     email: administration@coopdegallix.ca
-  - name: Maxime Eade 
+  - name: Maxime Eade
     position: Trésorier
     img: /img/illustrations/smile.svg
     text:
     email: tresorerie@coopdegallix.ca
   - name: Julie Petitpas
     position: Administratrice
-    img: /img/illustrations/smile.svg
+    img: /img/team/jp.png
     text:
-    email: administration@coopdegallix.ca    
+    email: administration@coopdegallix.ca
   - name: Aurélien Desplanques
     position: Administrateur
     img: /img/illustrations/smile.svg
