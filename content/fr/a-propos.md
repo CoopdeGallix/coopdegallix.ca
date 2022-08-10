@@ -66,7 +66,7 @@ CA:
     email: presidence@coopdegallix.ca
   - name: Doriane Landry
     position: Administratrice
-    img: /img/illustrations/smile.svg
+    img: /img/team/dl.jpg
     text:
     email: administration@coopdegallix.ca
   - name: Maxime Eade
@@ -81,8 +81,8 @@ CA:
     email: administration@coopdegallix.ca
   - name: Aurélien Desplanques
     position: Administrateur
-    img: /img/illustrations/smile.svg
-    text:
+    img: /img/team/ad.jpg
+    text: \"*Le bonheur vient de l’attention prêté aux petites choses, je suis persuadé que la Coop de Gallix va contribuer à la joie de vivre de notre communauté.*\"
     email: administration@coopdegallix.ca
   - name: Samuel Guay
     position: Administrateur
@@ -91,12 +91,12 @@ CA:
     email: administration@coopdegallix.ca
   - name: Mathieu Porlier
     position: Vice-président
-    img: /img/illustrations/smile.svg
-    text:
+    img: /img/team/mp.jpg
+    text: \"*Étant natif de Gallix, j'ai toujours aimé m'impliquer au sein de la communauté pour créer un sentiment de bien-être dans notre village! Je crois que le projet de coop est important pour rassembler la population et aura un impact majeur à long terme!!*\"
     email: vice-presidence@coopdegallix.ca
   - name: Serge Landry
     position: Secrétaire
-    img: /img/illustrations/smile.svg
-    text:
+    img: /img/team/sl.jpg
+    text: \"*Citoyen de Gallix depuis 1975, je souhaite y demeurer le plus longtemps possible. Les services de proximité, épicerie, essence, lieux de rencontre, service aux jeunes comme aux aînés, etc. doivent y être disponibles pour conserver sa qualité de vie, surtout dans un monde aussi changeant que celui d'aujourd'hui. Je crois qu'ensemble, on peut transformer un "désert alimentaire" en oasis fertile, en un lieu agréable et confortable, vivant en nature comme en communauté.*\"
     email: secretariat@coopdegallix.ca
 ---
