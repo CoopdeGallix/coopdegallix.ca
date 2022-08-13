@@ -21,4 +21,4 @@ FAQ:
 
 PS: Ce formulaire n'est qu'un brouillon à des fins de démonstration.
 
-{{< pdf name="formulaire_adhesion_draft.pdf" >}}
+{{< pdf name="formulaire_adhesion_v1.pdf" >}}
