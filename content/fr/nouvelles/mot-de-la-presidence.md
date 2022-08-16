@@ -1,5 +1,6 @@
 ---
-title: Bonjour - Hello - Kuei!
+title: Mot de la présidence
+subtitle: Bonjour - Hello - Kuei!
 date: 2022-08-01
 ---
 
@@ -11,13 +12,13 @@ tenue le 24 mai dernier à la salle communautaire de Gallix, a été très
 encourageante, alors que plus de 100 personnes se réunissaient et démontraient
 du même coup le soutien de la population envers ce projet porteur. Un conseil
 d’administration a pu être formé afin d’en assurer la réalisation. Ce CA est
-composé des personnes suivantes :
+composé des personnes suivantes:
 
 <div class="row">
 <div class="col-6">
 <p>
 Aurélien Desplanques, administrateur<br>
-Doriane Landry, administratrice<br>   
+Doriane Landry, administratrice<br>
 Julie Petitpas, administratrice<br>
 Mathieu Porlier, vice-président<br>
 </p>

@@ -5,13 +5,13 @@ params:
   fullname: Coopérative de solidarité de Gallix
   nav:
     title: Coop de Gallix
-    logo_light: /img/brand/light.svg
+    logo_light: /img/brand/logo_nav_light.svg
     logo_light_alt: Logo light
     logo_dark: /img/brand/dark.svg
     logo_dark_alt: Logo dark
     btn:
       title: Devenir membre
-      url: /inscription
+      url: /adhesion
 
   networking:
     site: coopdegallix.ca
@@ -53,11 +53,11 @@ languages:
       #   url: /a-propos/#equipe
       #   weight: 10
       #   parent: À propos
-      - name: Inscription
+      - name: Adhésion
         params:
           class:
         pre:
-        url: /inscription/
+        url: /adhesion/
         weight: 20
       - name: Nouvelles
         url: /nouvelles/

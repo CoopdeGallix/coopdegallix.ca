@@ -1,5 +1,5 @@
 ---
-title: Inscription à la coopérative
+title: Adhésion à la Coopérative
 layout: inscription
 
 FAQ:
@@ -9,7 +9,7 @@ FAQ:
     r: Une foire aux questions permet de répertorier les questions les plus fréquentes que les membres ou futures membres nous posent. Au final, vous y gagnerez du temps à trouver vos réponses. Si vous croyez qu'il manque des questions ou que des clarifications sont nécessaires, veuillez entrer en contact avec nous.
 ---
 
-## Procédure d'inscription en cours d'élaboration
+## Procédure d'adhésion en cours d'élaboration
 
 <!-- Pour devenir membre de la coopérative, le processus est le plus simple:
 
