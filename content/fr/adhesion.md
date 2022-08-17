@@ -1,6 +1,6 @@
 ---
 title: Adhésion à la Coopérative
-layout: inscription
+layout: adhesion
 
 FAQ:
   title: Foire aux questions
@@ -9,7 +9,7 @@ FAQ:
     r: Une foire aux questions permet de répertorier les questions les plus fréquentes que les membres ou futures membres nous posent. Au final, vous y gagnerez du temps à trouver vos réponses. Si vous croyez qu'il manque des questions ou que des clarifications sont nécessaires, veuillez entrer en contact avec nous.
 ---
 
-## Procédure d'adhésion en cours d'élaboration
+## Procédure d'adhésion en cours d'élaboration, mais vous pouvez vous inscrire quand même en remplissant le formulaire et nous l'envoyer au info@coopdegallix.ca!
 
 <!-- Pour devenir membre de la coopérative, le processus est le plus simple:
 
@@ -19,6 +19,5 @@ FAQ:
 4. Lors du CA suivant votre paiement, la confirmation des nouveaux membres se fera et vous recevrez votre numéro de membre ainsi que votre carte de membre.
 5.  -->
 
-PS: Ce formulaire n'est qu'un brouillon à des fins de démonstration.
 
-{{< pdf name="formulaire_adhesion_v1.pdf" >}}
+{{< pdf name="CSG_formulaire-adhesion-membre_v1.pdf" >}}
