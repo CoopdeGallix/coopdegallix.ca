@@ -67,7 +67,7 @@ CA:
   - name: Doriane Landry
     position: Administratrice
     img: /img/team/dl.jpg
-    text:
+    text: \"*Un beau village, des résidents formidables, un sentiment d'appartenance, un désir d'améliorer la qualité de vie des citoyens, tant de bonnes raisons ont motivé mon implication dans ce beau projet.*\"
     email: administration@coopdegallix.ca
   - name: Maxime Eade
     position: Trésorier
@@ -82,7 +82,7 @@ CA:
   - name: Aurélien Desplanques
     position: Administrateur
     img: /img/team/ad.jpg
-    text: \"*Le bonheur vient de l’attention prêté aux petites choses, je suis persuadé que la Coop de Gallix va contribuer à la joie de vivre de notre communauté.*\"
+    text: \"*Le bonheur vient de l’attention prêtée aux petites choses, je suis persuadé que la Coop de Gallix va contribuer à la joie de vivre de notre communauté.*\"
     email: administration@coopdegallix.ca
   - name: Samuel Guay
     position: Administrateur
