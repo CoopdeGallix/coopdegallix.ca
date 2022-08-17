@@ -1,12 +1,12 @@
 {{ $currentPage := . }}
 <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-dark {{ if ne .IsHome true }} bg-dark {{end}}">
   <div class="container position-relative">
-    <a class="navbar-brand me-lg-5" href="{{ "/" | absLangURL }}">
+    <a class="navbar-brand" href="{{ "/" | absLangURL }}">
       <img class="navbar-brand-dark" src="{{ .Site.Params.nav.logo_light }}" alt="{{ .Site.Params.nav.logo_light_alt }}">
       <img class="navbar-brand-light" src="{{ .Site.Params.nav.logo_dark }}" alt="{{ .Site.Params.nav.logo_dark_alt }}">
-      {{ .Site.Params.nav.title }}
+      {{/*  {{ .Site.Params.nav.title }}  */}}
     </a>
-    <div class="navbar-collapse collapse me-auto" id="navbar_global">
+    <div class="navbar-collapse collapse me-auto justify-content-center" id="navbar_global">
       <div class="navbar-collapse-header">
         <div class="row">
           <div class="col-6 collapse-brand">
@@ -44,7 +44,7 @@
         </li>
         {{ else }}
         <li class="nav-item">
-          <a class="nav-link {{ with .Params.class }}{{ . }}{{ end }}{{ if $currentPage.HasMenuCurrent "main" . }} active{{ end }}" href="{{ .URL }}" title="{{ .Title }}" class="{{ with .Params.class }}{{ . }}{{ end }}">
+          <a class="nav-link justify-content-center text-uppercase fs-5 {{ with .Params.class }}{{ . }}{{ end }}{{ if $currentPage.HasMenuCurrent "main" . }} active{{ end }}" href="{{ .URL }}" title="{{ .Title }}" style="letter-spacing: .1rem">
             {{ .Pre }}
             {{- .Name -}}
           </a>
@@ -57,8 +57,8 @@
         {{ .Scratch.Set "separator" true }}
         {{ range (default .Site.Home.AllTranslations .Translations) }}
         {{ if ne $.Site.Language .Language }}
-        <li class="nav-item">
-            <a class="nav-link text-warning" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        <li class="nav-item ">
+            <a class="nav-link text-uppercase justify-content-center fs-5" href="{{ .Permalink }}"><i class="fas fa-globe pe-1"></i>{{ .Language.Lang }}</a>
         </li>
         {{ end }}
         {{ end }}

@@ -45,10 +45,10 @@ hist:
     - title: 2018 - Constitution d'un comité provisoire
       text: Un comité provisoire a été créé afin de répondre au besoin de la communauté.
     - title: 2020-2021 - Pandémie, ralentissement des activités
-      text: Alors que les démarches avançaient bien, la pandémie du COVID-19 a ralenti le projet.
+      text: Alors que les démarches avançaient bien, la pandémie du COVID-19 a ralenti le projet. [Cliquez ici pour écouter une entrevue réalisée en 2020 par Radio-Canada avec Serge Landry, impliqué depuis le début et désormais secrétaire du conseil d'administration](https://ici.radio-canada.ca/ohdio/premiere/emissions/boreale-138/segments/entrevue/169922/gallix-depanneur-coop-moilisation-citoyenne).
       img: /img/illustrations/covid-19.svg
     - title: 2022 - Rencontre publique avec la communauté
-      text: Plus de 100 personnes étaient présentes et le besoin s'est fait sentir!
+      text: Plus de 100 personnes étaient présentes et le besoin s'est fait sentir! [Cliquez ici pour lire l'article de Radio-Canada à ce sujet.](https://ici.radio-canada.ca/nouvelle/1885959/alimentation-desert-alimentaire-depanneur-citoyens)
       img: /img/illustrations/ag.svg
     - title: 2022 - Élection officielle du conseil d'administration
       text: 8 membres siègent sur le CA et veillent à l'avancement du projet.

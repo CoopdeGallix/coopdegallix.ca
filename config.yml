@@ -7,7 +7,7 @@ params:
     title: Coop de Gallix
     logo_light: /img/brand/logo_nav_light.svg
     logo_light_alt: Logo light
-    logo_dark: /img/brand/dark.svg
+    logo_dark: /img/brand/logo_nav_dark.svg
     logo_dark_alt: Logo dark
     btn:
       title: Devenir membre
@@ -24,11 +24,11 @@ params:
       icon: fab fa-github
 
   footer:
-    title: Coopérative de solidarité de Gallix **|** <br> Une présence active dans notre communauté
+    title: Coopérative de solidarité de Gallix <br> *Une présence active dans notre communauté*
     newsletter:
       title: Abonnez-vous à notre infolettre
       subtitle: |
-        Nous enverrons une infolettre résumant les derniers avancements <span class="fw-bolder">au maximum une fois par mois.</span>
+        Nous envoyons une infolettre résumant les derniers avancements <span class="fw-bolder">au maximum une fois par mois.</span>
         <br> PS: Nous ne divulguerons jamais votre adresse.
       btn: M'abonner
       text_note: Une page ouvrira afin de confirmer que vous n'êtes pas un robot 🤖!
@@ -68,6 +68,7 @@ languages:
 
   en:
     languageName: English
+    languageAbb: EN
     contentDir: content/en
     weight: 2
     # menu:

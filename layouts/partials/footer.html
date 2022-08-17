@@ -1,8 +1,8 @@
 <footer class="footer pt-6 pb-4 bg-primary text-white">
     <div class="container">
         <div class="row justify-content-around">
-            <div class="col-md-4">
-                <img class="navbar-brand-dark mb-4" height="35" src="{{ .Site.Params.nav.logo_light }}"
+            <div class="col-md-4 text-center">
+                <img class="navbar-brand-dark mb-4" height="150" src="{{ .Site.Params.nav.logo_light }}"
                     alt="Logo light">
                 <p>{{ .Site.Params.footer.title | markdownify }} </p>
                 <ul class="social-buttons mb-5 mb-lg-0">
@@ -16,7 +16,7 @@
                     {{ end }}
                 </ul>
             </div>
-            <div class="col-6 col-md-2 mb-5 mb-lg-0">
+            <div class="col-6 col-md-2 mb-5 mb-lg-0 text-center">
                 <span class="h5">Menu</span>
                 <ul class="footer-links mt-2">
                   {{ range .Site.Menus.main }}
@@ -53,10 +53,6 @@
         <hr class="">
         <div class="row">
             <div class="col mb-md-0">
-                {{/*  <a href="https://themesberg.com" target="_blank" class="d-flex justify-content-center mb-3">
-                    <img src="/img/themesberg.svg" height="30" class="me-2" alt="Themesberg Logo">
-                    <p class="text-white fw-bold footer-logo-text m-0">{{ .Site.Title }}</p>
-                </a>  */}}
                 <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
                     <p class="fw-normal font-small mb-0">© {{ .Site.Params.fullname }} - <span
                             class="current-year"> {{ now }} </span> - Tous droits réservés </p>
