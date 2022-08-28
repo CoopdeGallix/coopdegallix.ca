@@ -1,22 +1,119 @@
 {{ define "main" }}
-<section class="section-header">
+<section class="section-header bg-primary text-white pb-sm-6 pb-md-8 pb-lg-10">
   <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-12 col-md-8 text-center">
-              <h1 class="display-2 mb-3">{{ .Title }}</h1>
-              <p>{{.Content}}</p>
-              <ul class="list-group list-group-flush">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-center">
+        <h1 class="display-2 mb-4">{{ .Title }}</h1>
+        <p class="lead">{{ .Content | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                {{ range .Pages }}
-                <li class="list-group-item">
-                  <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-                  <time>{{ .Date | time.Format ":date_medium" }}</time>
-                </li>
-                
-                {{ end }}
-              </ul>
+{{/*  Featured blog post  */}}
+<section class="section section-lg line-bottom-light">
+  <div class="container mt-n6 mt-md-n10 mt-lg-n12 z-2">
+    <div class="row">
+      {{ range where .Pages "Params.featured" true | first 1 }}
+      <div class="col-lg-12 mb-5">
+        <div class="card shadow bg-white border-gray-300 flex-md-row align-items-center g-0 p-4">
+          <a href="{{ .RelPermalink }}" class="col-12 col-md-6 text-center"><img
+              src="{{ if .Params.img }} {{- .Params.img -}} {{- else -}} /img/logo/csg_logo_1000x.png {{- end}}" alt="Logo"
+              class="card-img-top rounded img"></a>
+          <div
+            class="card-body d-flex flex-column justify-content-between col-auto py-4 p-0 p-lg-3 p-xl-5">
+              <h2>{{ .Title }}</h2>
+            <p>{{ .Summary | markdownify | emojify }}</p>
+            <div class="d-flex align-items-center mt-3">
+              <span class="h6 text-muted small fw-normal mb-0 me-auto">
+                <time datetime="{{.Date | time.Format ":date_short" }}">{{ .Date | time.Format ":date_medium" }}</time>
+              </span>
+            <a class="stretched-link fs-5 text-primary" href="{{ .RelPermalink }}">
+                Poursuivre la lecture
+            </a>
+            </div>
           </div>
+        </div>
+      </div>
+        {{end}}
+    </div>
+
+    {{/*  Other posts  */}}
+      <div class="row">
+        {{ range where .Pages "Params.featured" "!=" true }}
+        <div class="col-md-6 d-flex">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col-auto d-none d-lg-block my-auto mx-auto ">
+              <img
+                  src="{{ if .Params.img }} {{- .Params.img -}} {{- else -}} /img/logo/csg_logo_1000x.png {{- end}}" alt="Logo"
+                  class="card-img-top rounded img" height="300">
+            </div>
+          <div class="col-auto p-4 d-flex flex-column position-static align-items-stretch">
+            {{/*  <strong class="d-inline-block mb-2 text-primary"> {{ .Tag }}</strong>  */}}
+            <h3 class="mb-0">{{ .Title }}</h3>
+            <time class="mb-1 text-muted">{{ .Date | time.Format ":date_medium" }}</time>
+            <p class="card-text mb-auto">{{ .Summary | markdownify | emojify  | truncate "100" }}</p>
+            <a href="{{ .RelPermalink }}" class="mt-auto stretched-link">Poursuivre la lecture</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
       </div>
   </div>
+</section>
+<section class="section section-lg line-bottom-light">
+  <div class="container mt-n6 mt-md-n10 mt-lg-n12 z-2">
+    <div class="row">
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" style="--darkreader-inline-fill: #5b6164;" data-darkreader-inline-fill=""></rect></svg>
+
+      <div class="container">
+        <div class="carousel-caption text-start">
+          {{ range where .Pages "Params.featured" "!=" true }}
+          <div class="row">
+
+          <div class="col-md-6 d-flex">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block my-auto mx-auto ">
+                <img
+                    src="{{ if .Params.img }} {{- .Params.img -}} {{- else -}} /img/logo/csg_logo_1000x.png {{- end}}" alt="Logo"
+                    class="card-img-top rounded img" height="300">
+              </div>
+            <div class="col-auto p-4 d-flex flex-column position-static align-items-stretch">
+              {{/*  <strong class="d-inline-block mb-2 text-primary"> {{ .Tag }}</strong>  */}}
+              <h3 class="mb-0">{{ .Title }}</h3>
+              <time class="mb-1 text-muted">{{ .Date | time.Format ":date_medium" }}</time>
+              <p class="card-text mb-auto">{{ .Summary | markdownify | emojify  | truncate "100" }}</p>
+              <a href="{{ .RelPermalink }}" class="mt-auto stretched-link">Poursuivre la lecture</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        {{ end }}
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</div>
+</div>
 </section>
 {{ end }}

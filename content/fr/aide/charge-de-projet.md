@@ -1,6 +1,7 @@
 ---
-title: Recherche personne-ressource avec expertise de chargé·e de projet.
+title: "Besoin: personne-ressource avec expertise de chargé·e de projet."
 date: 2022-08-02
+summary: "Nous sommes présentement à la recherche d’une personne qui a de l'expérience ou qui a déjà été chargé·e de projet et qui aimerait aider le conseil d'administration à ne rien oublier lors des premières étapes."
 ---
 
 ## **Nous sommes présentement à la recherche d’une personne qui a une expertise comme chargé·e de projet.**
