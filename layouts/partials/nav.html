@@ -44,7 +44,7 @@
         </li>
         {{ else }}
         <li class="nav-item">
-          <a class="nav-link justify-content-center text-uppercase fs-5 {{ with .Params.class }}{{ . }}{{ end }}{{ if $currentPage.HasMenuCurrent "main" . }} active{{ end }}" href="{{ .URL }}" title="{{ .Title }}" style="letter-spacing: .1rem">
+          <a class="nav-link text-center justify-content-center text-uppercase fs-5 {{ with .Params.class }}{{ . }}{{ end }}{{ if $currentPage.HasMenuCurrent "main" . }} active{{ end }}" href="{{ .URL }}" title="{{ .Title }}" style="letter-spacing: .1rem">
             {{ .Pre }}
             {{- .Name -}}
           </a>
@@ -58,7 +58,7 @@
         {{ range (default .Site.Home.AllTranslations .Translations) }}
         {{ if ne $.Site.Language .Language }}
         <li class="nav-item ">
-            <a class="nav-link text-uppercase justify-content-center fs-5" href="{{ .Permalink }}"><i class="fas fa-globe pe-1"></i>{{ .Language.Lang }}</a>
+            <a class="nav-link text-center text-uppercase justify-content-center fs-5" href="{{ .Permalink }}"><i class="fas fa-globe pe-1"></i>{{ .Language.Lang }}</a>
         </li>
         {{ end }}
         {{ end }}
