@@ -19,12 +19,4 @@ FAQ:
 
 Si vous ne voyez pas le formulaire apparaitre, veuillez le [télécharger en cliquant sur ce lien](/files/CSG_formulaire-adhesion-membre_v1.pdf).
 
-<!-- Pour devenir membre de la coopérative, le processus est le plus simple:
-
-1. Vous devez remplir le formulaire d'adhésion pour les membres.
-2. Nous envoyer le formulaire d'adhésion signé.
-3. Recevoir la confirmation de réception et l'envoi de votre paiement par e-interac ou aller porter votre chèque à un des membres du CA
-4. Lors du CA suivant votre paiement, la confirmation des nouveaux membres se fera et vous recevrez votre numéro de membre ainsi que votre carte de membre.
-
-
 {{< pdf name="CSG_formulaire-adhesion-membre_v1.pdf" >}}
