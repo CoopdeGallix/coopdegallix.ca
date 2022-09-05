@@ -3,6 +3,15 @@ title: Coop de Gallix
 # navbar
 params:
   fullname: Coopérative de solidarité de Gallix
+  title: Coopérative de solidarité de Gallix
+  images:
+  - "CSG_cover_1.png"
+  # schema stuff
+  site_type: LocalBusiness
+  local_business_type: FoodEstablishment
+  org_name: Coopérative de solidarité de Gallix
+  description: La Coop de Gallix est un projet qui a vu le jour afin de sortir le secteur de Gallix d'un désert alimentaire.
+
   nav:
     title: Coop de Gallix
     logo_light: /img/brand/logo_nav_light.svg
@@ -15,6 +24,7 @@ params:
 
   networking:
     site: coopdegallix.ca
+    username: CoopdeGallix
     social:
     - link: https://facebook.com/CoopdeGallix
       icon: fab fa-facebook
