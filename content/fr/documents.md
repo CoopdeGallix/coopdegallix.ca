@@ -2,10 +2,9 @@
 title: Liste des documents disponibles
 ---
 
-* [Formulaire d'adhésion pour un membre utilisateur](/files/CSG_formulaire-adhesion-membre_v1.pdf).
-* [Formulaire d'adhésion pour un membre de soutien](/files/CSG_formulaire-adhesion_membre-soutien_v1.pdf).
-* [Formulaire de don](/files/CSG_formulaire-don_v1.pdf)
-* [Règlement de régie interne de la Coopérative](/files/CSG_RRI_2022-05-25.pdf).
+* [Formulaire d'adhésion pour un membre utilisateur](/fichiers/CSG_formulaire-adhesion_membre-utilisateur_v2.pdf).
+* [Formulaire d'adhésion pour un membre de soutien](/fichiers/CSG_formulaire-adhesion_membre-soutien_v2.pdf).
+* [Règlement de régie interne de la Coopérative](/fichiers/CSG_RRI_2022-05-25.pdf).
 * [Logo](/logo)
 
 ## Logo officiel avec slogan
