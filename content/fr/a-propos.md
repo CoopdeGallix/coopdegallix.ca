@@ -51,7 +51,7 @@ hist:
       text: Plus de 100 personnes étaient présentes et le besoin s'est fait sentir! [Cliquez ici pour lire l'article de Radio-Canada à ce sujet.](https://ici.radio-canada.ca/nouvelle/1885959/alimentation-desert-alimentaire-depanneur-citoyens)
       img: /img/illustrations/ag.svg
     - title: 2022 - Élection officielle du conseil d'administration
-      text: 8 membres siègent sur le CA et veillent à l'avancement du projet.
+      text: 9 membres siègent sur le CA et veillent à l'avancement du projet.
       img: /img/illustrations/CA.svg
 
 
@@ -62,32 +62,27 @@ CA:
   - name: Réjean Porlier
     position: Président
     img: /img/team/rp.png
-    text:
+    text: \"En plus d’être un projet de la communauté pour la communauté, la coopérative deviendra un lieu de rencontre, un catalyseur de notre développement socio-économique et je l’espère, un élément de fierté pour le milieu. La coop sera le reflet de cette communauté accueillante et bienveillante qu’est la nôtre.\"
     email: presidence@coopdegallix.ca
   - name: Doriane Landry
     position: Administratrice
     img: /img/team/dl.jpg
     text: \"*Un beau village, des résidents formidables, un sentiment d'appartenance, un désir d'améliorer la qualité de vie des citoyens, tant de bonnes raisons ont motivé mon implication dans ce beau projet.*\"
     email: administration@coopdegallix.ca
-  - name: Maxime Eade
-    position: Trésorier
-    img: /img/illustrations/smile.svg
-    text:
-    email: tresorerie@coopdegallix.ca
-  - name: Julie Petitpas
-    position: Administratrice
-    img: /img/team/jp.png
-    text:
-    email: administration@coopdegallix.ca
   - name: Aurélien Desplanques
-    position: Administrateur
+    position: Trésorier
     img: /img/team/ad.jpg
     text: \"*Le bonheur vient de l’attention prêtée aux petites choses, je suis persuadé que la Coop de Gallix va contribuer à la joie de vivre de notre communauté.*\"
-    email: administration@coopdegallix.ca
+    email: tresorerie@coopdegallix.ca
   - name: Samuel Guay
     position: Administrateur
     img: /img/team/sg.png
     text: \"*Je tiens à m'impliquer au sein du projet, car je crois fermement aux retombées positives qu'il aura sur notre communauté et l'environnement.*\"
+    email: administration@coopdegallix.ca
+  - name: Julie Petitpas
+    position: Administratrice
+    img: /img/team/jp.png
+    text:
     email: administration@coopdegallix.ca
   - name: Mathieu Porlier
     position: Vice-président
@@ -98,5 +93,15 @@ CA:
     position: Secrétaire
     img: /img/team/sl.jpg
     text: \"*Citoyen de Gallix depuis 1975, je souhaite y demeurer le plus longtemps possible. Les services de proximité, épicerie, essence, lieux de rencontre, service aux jeunes comme aux aînés, etc. doivent y être disponibles pour conserver sa qualité de vie, surtout dans un monde aussi changeant que celui d'aujourd'hui. Je crois qu'ensemble, on peut transformer un "désert alimentaire" en oasis fertile, en un lieu agréable et confortable, vivant en nature comme en communauté.*\"
+    email: secretariat@coopdegallix.ca
+  - name: Christine Brochu
+    position: Administratrice
+    img: /img/team/cb.jpg
+    text:
+    email: administration@coopdegallix.ca
+  - name: Claude Mallet
+    position: Représentant des membres de soutien
+    img: /img/illustrations/smile.svg
+    text: 
     email: secretariat@coopdegallix.ca
 ---
