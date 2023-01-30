@@ -62,7 +62,7 @@ CA:
   - name: Réjean Porlier
     position: Président
     img: /img/team/rp.png
-    text: \"En plus d’être un projet de la communauté pour la communauté, la coopérative deviendra un lieu de rencontre, un catalyseur de notre développement socio-économique et je l’espère, un élément de fierté pour le milieu. La coop sera le reflet de cette communauté accueillante et bienveillante qu’est la nôtre.\"
+    text: \"*En plus d’être un projet de la communauté pour la communauté, la coopérative deviendra un lieu de rencontre, un catalyseur de notre développement socio-économique et je l’espère, un élément de fierté pour le milieu. La coop sera le reflet de cette communauté accueillante et bienveillante qu’est la nôtre.*\"
     email: presidence@coopdegallix.ca
   - name: Doriane Landry
     position: Administratrice
@@ -101,7 +101,7 @@ CA:
     email: administration@coopdegallix.ca
   - name: Claude Mallet
     position: Représentant des membres de soutien
-    img: /img/illustrations/smile.svg
+    img: /img/team/cm.jpg
     text: 
     email: secretariat@coopdegallix.ca
 ---
