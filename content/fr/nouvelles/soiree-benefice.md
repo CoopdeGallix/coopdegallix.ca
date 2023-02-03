@@ -4,6 +4,7 @@ subtitle: Bonjour - Hello - Kuei!
 summary: Parce qu'il est temps de se retrouver en communauté pour vous mettre à jour sur les développements de la Coop et célébrer l'année 2023 en chansons!
 featured: true
 date: 2023-01-13
+draft: true
 ---
 
 ![logo](/img/logo/csg_logo-slogan_1000x.png)
