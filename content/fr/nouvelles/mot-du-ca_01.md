@@ -4,7 +4,7 @@ subtitle: Bonjour - Hello - Kuei!
 summary: Les *Mots du conseil d'administration* informent la communauté à propos des derniers avancements du projet, des détails, etc. Celui-ci se veut le premier billet, décrivant les dernières nouvelles depuis la rencontre du 24 mai, notamment les membres du CA, le lancement de la campagne d'adhésion et plus encore!
 featured: false
 date: 2022-08-01
-img: csg_logo_300x.png
+# img: csg_logo_300x.png
 ---
 
 ![logo](/img/logo/csg_logo-slogan_1000x.png)
