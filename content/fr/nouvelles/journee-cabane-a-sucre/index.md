@@ -1,10 +1,11 @@
 ---
-title: Journée Cabane à sucre du 15 avril 2023
+title: Journée Cabane à sucre + Souper du 15 avril 2023
 subtitle: Bonjour - Hello - Kuei!
-summary: 
+summary: Maquillage, princesses, mini chevaux, tire d'érable,
+  concours de bûcherons en plus d'un souper avec le duo James et Barry, tout y sera lors de cette journée légendaire à Gallix! Venez célébrer avec nous!
 featured: true
-date: 2023-04-15
-img: feature.png
+date: 2023-03-31
+img: ./CSG_CAB_cover-FB.png
 ---
 
 ![Affiche de l'activité](CSG_CAB_poster.png)

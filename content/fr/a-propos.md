@@ -97,7 +97,8 @@ CA:
   - name: Christine Brochu
     position: Administratrice
     img: /img/team/cb.jpg
-    text:
+    text: |
+      \"*Originaire de la Côte Nord, j'y suis profondément attachée! J’ai acquis mon chalet à Gallix en 2003 et je suis toujours émerveillée par la beauté de la nature chaque fois que j’y réside. C’est avec enthousiasme que je participe au projet de COOP de Gallix afin de valoriser notre belle localité, d’offrir des services à la communauté et d'encourager notre économie locale.*\"
     email: administration@coopdegallix.ca
   - name: Claude Mallet
     position: Représentant des membres de soutien
