@@ -6,6 +6,8 @@ featured: false
 date: 2023-01-09
 draft: false
 img: CSG_soiree-28jan.png
+tags:
+  - événement
 ---
 
 ![Affiche pour l'activité](CSG_soiree-28jan.png)

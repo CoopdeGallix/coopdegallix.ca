@@ -4,6 +4,8 @@ subtitle: Bonjour - Hello - Kuei!
 summary: Les *Mots du conseil d'administration* informent la communauté à propos des derniers avancements du projet, des détails, etc. Celui-ci se veut le deuxième billet décrit, entres autres, ce qui attend la Coop pour 2023.
 featured: false
 date: 2023-01-10
+tags:
+  - communiqué
 ---
 
 Bonjour,

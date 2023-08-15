@@ -6,6 +6,8 @@ summary: Maquillage, princesses, mini chevaux, tire d'érable,
 featured: false
 date: 2023-03-31
 img: ./CSG_CAB_cover-FB.png
+tags:
+  - événement
 aliases:
 - /evenement/
 ---

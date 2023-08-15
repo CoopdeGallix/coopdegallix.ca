@@ -5,6 +5,8 @@ summary: Les *Mots du conseil d'administration* informent la communauté à prop
 featured: false
 date: 2022-08-01
 # img: csg_logo_300x.png
+tags:
+  - communiqué
 ---
 
 ![logo](/img/logo/csg_logo-slogan_1000x.png)
