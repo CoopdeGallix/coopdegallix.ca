@@ -1,9 +1,11 @@
 ---
 title: "Mot du conseil d'administration 03"
 subtitle: Bonjour - Hello - Kuei!
-summary: Les *Mots du conseil d'administration* informent la communauté à propos des derniers avancements du projet, des détails, etc. Celui-ci se veut le troisième billet décrit, entres autres, ce qui attend la Coop pour 2023.
+summary: Les *Mots du conseil d'administration* informent la communauté à propos des derniers avancements du projet, des détails, etc. Celui-ci se veut le troisième billet décrit, entres autres, e que nous avons accompli depuis 2023.
 featured: true
 date: 2023-08-10
+tags:
+  - communiqué
 ---
 
 ## **Mot du président**

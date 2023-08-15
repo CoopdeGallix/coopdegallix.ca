@@ -5,6 +5,8 @@ summary: Invitation à l'AGA de votre coop! Venez pour découvrir ce que votre C
 featured: false
 date: 2023-03-20
 img: ./CSG_2023_AGA.png
+tags:
+  - événement
 ---
 
 ![Affiche de l'activité](CSG_2023_AGA.png)

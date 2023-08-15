@@ -2,6 +2,8 @@
 title: Projet de recherche EffICAS - Phase 1 terminée!
 date: 2022-08-02
 img: efficas.png
+tags:
+  - nouvelle
 ---
 
 Les résultats de la Phase 1 du projet de recherche EffICAS ont été communiqués aux participants et participantes. Une première affiche de l'[étude](https://www.acadiate.com//ee/jasp-communicationsaffichees/Lobby?view=std&showcase=882949696) qui inclut notre communauté est désormais [disponible](https://www.acadiate.com//ee/jasp-communicationsaffichees/Lobby?view=std&showcase=882949696)!
