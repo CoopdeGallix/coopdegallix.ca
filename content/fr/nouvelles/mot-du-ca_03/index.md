@@ -2,7 +2,7 @@
 title: "Mot du conseil d'administration 03"
 subtitle: Bonjour - Hello - Kuei!
 summary: Les *Mots du conseil d'administration* informent la communauté à propos des derniers avancements du projet, des détails, etc. Celui-ci se veut le troisième billet décrit, entres autres, ce que nous avons accompli depuis 2023.
-featured: true
+featured: false
 date: 2023-08-10
 aliases:
 - /mot-du-ca/
@@ -46,13 +46,18 @@ La préparation de terrain a été amorcée avec l'enlèvement du couvert végé
 
 ### **Acquisition**
 
-La Coop de Gallix a eu le plaisir de faire l'acquisition du terrain situé au 551, rue Thériault, en juin dernier.
+La Coop de Gallix a eu le plaisir de faire l'acquisition du terrain situé au 551, rue Thériault, en juin dernier. Un gros merci aux gens qui sont venus nous aider à déboiser!
 
 ### **Nos partenaires**
 
 De nombreux partenaires ont déjà confirmé leur participation et soutien au projet. La liste détaillée vous sera transmise dans une prochaine communication.
 
 ![Votre C.A.](/img/votre_ca.svg)
+
+
+![](forage_3.jpg)
+![](forage_1.jpg)
+![](deboisement.jpg)
 
 ---
 

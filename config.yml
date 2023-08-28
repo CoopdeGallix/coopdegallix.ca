@@ -72,15 +72,18 @@ languages:
       - name: Nouvelles
         url: /nouvelles/
         weight: 30
+      - name: Financement
+        url: /financement/
+        weight: 30
       - name: Contact
         url: /contact/
         weight: 40
 
-  en:
-    languageName: English
-    languageAbb: EN
-    contentDir: content/en
-    weight: 2
+  # en:
+  #   languageName: English
+  #   languageAbb: EN
+  #   contentDir: content/en
+  #   weight: 2
     # menu:
     #   main:
     #   - name: About
