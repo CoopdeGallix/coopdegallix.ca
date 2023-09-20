@@ -2,7 +2,7 @@
 title: "Lancement des parts privilégiées!"
 subtitle: Bonjour - Hello - Kuei!
 summary: Lancement de la campagne d'émission de parts privilégiées! Tel que mentionné dans la mise à jour du 10 août 2023, votre  conseil d’administration a décidé d’opter pour l’émission de parts privilégiées afin de compléter le montage financier nécessaire à la construction de notre coop d’alimentation et station-service. L’objectif est d’amasser 100 000 $ pour un projet qui en coûtera un peu plus de 2 millions.
-featured: true
+featured: false
 date: 2023-08-28
 tags:
   - communiqué
