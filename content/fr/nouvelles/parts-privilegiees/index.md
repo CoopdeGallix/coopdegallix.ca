@@ -9,28 +9,6 @@ tags:
 img: CSG_campagne.png
 ---
 
-<!-----
-
-Yay, no errors, warnings, or alerts!
-
-Conversion time: 0.279 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Mon Aug 28 2023 01:25:44 GMT-0700 (PDT)
-* Source doc: CSG_mot-du-CA_campagne
------>
-
-
 Chers membres,
 
 C’est parti pour les parts privilégiées!
