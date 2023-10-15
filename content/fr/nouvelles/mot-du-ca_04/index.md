@@ -2,7 +2,7 @@
 title: "Mot du conseil d'administration 04"
 subtitle: Bonjour - Hello - Kuei!
 summary: Ce qui nous attend pour le mois de septembre!
-featured: true
+featured: false
 date: 2023-09-10
 tags:
   - communiqué

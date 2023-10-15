@@ -3,7 +3,6 @@ title: Adhésion à la Coopérative
 subtitle: |
   Sur cette page, vous trouverez les instructions ainsi que les différents formulaires d'adhésion pour devenir membre de la Coopérative.
 alert: |
-  Mise à jour de la procédure a été effectuée. Merci de votre patience.  
   Vous trouverez tous les détails ci-dessous pour les [membres utilisateurs](#pour-les-futurs-membres-utilisateurs) et les [membres de soutien](#pour-les-futurs-membres-de-soutien) ainsi qu'une [Foire aux questions](#foire-aux-questions) au bas de la page.
 
 layout: adhesion
