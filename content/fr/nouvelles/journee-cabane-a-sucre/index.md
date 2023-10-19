@@ -8,8 +8,6 @@ date: 2023-03-31
 img: ./CSG_CAB_cover-FB.png
 tags:
   - événement
-aliases:
-- /evenement/
 ---
 
 ![Affiche de l'activité](CSG_CAB_poster.png)
@@ -35,7 +33,6 @@ De plus, à partir de 18:00, il y aura un souper en soirée avec la présence du
 * Prix de présence et ++
 * Remise des prix aux gagnants des concours de bûcherons
 * Soirée 18 et plus
-
 
 Venez prendre des nouvelles du projet et profiter d'un bon repas en communauté.
 

@@ -2,8 +2,9 @@
 title: "Dernier appel pour atteindre notre objectif de financement!"
 subtitle: Bonjour - Hello - Kuei!
 summary: Il n'en manque pas gros pour y arriver!
-featured: true
-date: 2023-09-10
+featured: false
+date: 2023-10-09
+draft: false
 tags:
   - communiqué
 ---
