@@ -13,7 +13,7 @@ tags:
 
 Bonjour,
 
-À partir de maintenant, les choses vont débouler rapidement, car il n’y a plus que quelques mois qui nous séparent du début des travaux de construction de notre coop d’alimentation et de notre station-service, soit tout uste après la fonte des neiges!
+À partir de maintenant, les choses vont débouler rapidement, car il n’y a plus que quelques mois qui nous séparent du début des travaux de construction de notre coop d’alimentation et de notre station-service, soit tout juste après la fonte des neiges!
 
 Nous ne savons pas pour vous, mais, de notre côté, c’est la fébrilité qui s’installe peu à peu. Planifier les travaux et commander les équipements afin que tout soit prêt pour une ouverture quelque part à l’automne prochain, voilà des défis qui nous tiendront passablement occupés. Qu’à cela ne tienne, l’équipe est toujours aussi passionnée et votre soutien depuis le début n’y est pas étranger.
 
