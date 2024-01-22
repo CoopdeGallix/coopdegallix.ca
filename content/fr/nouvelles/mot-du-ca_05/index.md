@@ -3,7 +3,7 @@ title: "Mot du conseil d'administration 05"
 subtitle: Bonjour - Hello - Kuei!
 # faire un résumé de 2-3 lignes de l'article
 summary: "Les derniers mois auront été occupés pour le CA et des bonnes nouvelles sont à l'horizon! 🎉"
-featured: true
+featured: false
 date: 2023-12-09
 tags:
   - communiqué
