@@ -3,8 +3,8 @@ title: "Mot du conseil d'administration 06"
 subtitle: Bonjour - Hello - Kuei!
 # faire un résumé de 2-3 lignes de l'article
 summary: "Préparez-vous, ça va opérer au printemps!! Qui veut travailler? Venez donner vos noms! Qui veut faire du bénévolat? "
-featured: true
-date: 2024-21-01
+featured: false
+date: 2024-01-21
 tags:
   - communiqué
 ---
