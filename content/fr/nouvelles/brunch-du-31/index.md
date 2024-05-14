@@ -2,7 +2,7 @@
 title: Brunch de Pâques au sous-sol de l'église le 31 mars
 subtitle: Bonjour - Hello - Kuei!
 summary: Venez déjeuner pour Pâques avec la grande famille de la Coop!
-featured: true
+featured: false
 draft: false
 date: 2024-03-27
 img: ./CSG_brunch_2_cover.png

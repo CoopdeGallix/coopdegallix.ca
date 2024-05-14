@@ -2,7 +2,7 @@
 title: Souper et soirée disco le 9 mars prochain!
 subtitle: Bonjour - Hello - Kuei!
 summary: Rejoignez-nous sur la piste de dance et laissez la fièvre disco s’emparer de vous! 🕺🎶
-featured: true
+featured: false
 draft: false
 date: 2024-02-14
 img: ./CSG_party-disco_cover.png
