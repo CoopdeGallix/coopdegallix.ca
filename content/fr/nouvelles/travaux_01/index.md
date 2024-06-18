@@ -3,7 +3,7 @@ title: "🚧 Début des travaux de construction! 🏗️"
 subtitle: Bonjour - Hello - Kuei!
 # faire un résumé de 2-3 lignes de l'article
 summary: "Le travaux ne tarderont pas à commencer pour la construction de votre épicerie et station-service!"
-featured: true
+featured: false
 date: 2024-05-14
 img: ./img.png
 tags:
