@@ -2,7 +2,7 @@
 title: Assemblée générale annuelle 2024
 subtitle: Bonjour - Hello - Kuei!
 summary: Invitation à l'AGA annuelle de votre coop! Venez pour découvrir ce que votre CA a accompli pendant la dernière année, pour voter et vous faire entendre ou tout simplement échanger avec les autres!
-featured: true
+featured: false
 date: 2024-06-18
 img: ./CSG_2024_AGA.png
 tags:
