@@ -72,8 +72,8 @@ languages:
       - name: Nouvelles
         url: /nouvelles/
         weight: 30
-      - name: Financement
-        url: https://laruchequebec.com/fr/projets/batir-une-coop-dalimentation
+      - name: Partenaires
+        url: /partenaires/
         weight: 30
       - name: Contact
         url: /contact/
