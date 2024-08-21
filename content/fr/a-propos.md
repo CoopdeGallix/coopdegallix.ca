@@ -68,29 +68,29 @@ CA:
     position: Administratrice
     img: /img/team/dl.jpg
     text: \"*Un beau village, des résidents formidables, un sentiment d'appartenance, un désir d'améliorer la qualité de vie des citoyens, tant de bonnes raisons ont motivé mon implication dans ce beau projet.*\"
-    email: administration@coopdegallix.ca
-  - name: Aurélien Desplanques
-    position: Trésorier
-    img: /img/team/ad.jpg
-    text: \"*Le bonheur vient de l’attention prêtée aux petites choses, je suis persuadé que la Coop de Gallix va contribuer à la joie de vivre de notre communauté.*\"
+    email: admin@coopdegallix.ca
+  - name: Robert Michaud
+    position: Administrateur
+    img: /img/team/avatar.png
+    # text: \"*Le bonheur vient de l’attention prêtée aux petites choses, je suis persuadé que la Coop de Gallix va contribuer à la joie de vivre de notre communauté.*\"
     email: tresorerie@coopdegallix.ca
   - name: Samuel Guay
     position: Administrateur
     img: /img/team/sg.png
     text: \"*Je tiens à m'impliquer au sein du projet, car je crois fermement aux retombées positives qu'il aura sur notre communauté et l'environnement.*\"
-    email: administration@coopdegallix.ca
-  - name: Julie Petitpas
+    email: admin@coopdegallix.ca
+  - name: Ann-Édith Daoust
     position: Administratrice
-    img: /img/team/jp.png
-    text:
-    email: administration@coopdegallix.ca
+    img: /img/team/aed.jpg
+    text: \"*Arrivée à Gallix en 2013, j'ai découvert une communauté unie dans un cadre naturel exceptionnel. Mon sentiment d'appartenance envers le village est indéniable. La Coop de Gallix est essentielle pour maintenir notre communauté autonome, riche d’une vie communautaire active. Je souhaite participer à son développement et à son rayonnement.*\"
+    email: admin@coopdegallix.ca
   - name: Mathieu Porlier
     position: Vice-président
     img: /img/team/mp.jpg
     text: \"*Étant natif de Gallix, j'ai toujours aimé m'impliquer au sein de la communauté pour créer un sentiment de bien-être dans notre village! Je crois que le projet de coop est important pour rassembler la population et aura un impact majeur à long terme!!*\"
     email: vice-presidence@coopdegallix.ca
   - name: Serge Landry
-    position: Secrétaire
+    position: Secrétaire-Trésorier
     img: /img/team/sl.jpg
     text: \"*Citoyen de Gallix depuis 1975, je souhaite y demeurer le plus longtemps possible. Les services de proximité, épicerie, essence, lieux de rencontre, service aux jeunes comme aux aînés, etc. doivent y être disponibles pour conserver sa qualité de vie, surtout dans un monde aussi changeant que celui d'aujourd'hui. Je crois qu'ensemble, on peut transformer un "désert alimentaire" en oasis fertile, en un lieu agréable et confortable, vivant en nature comme en communauté.*\"
     email: secretariat@coopdegallix.ca
@@ -99,7 +99,7 @@ CA:
     img: /img/team/cb.jpg
     text: |
       \"*Originaire de la Côte Nord, j'y suis profondément attachée! J’ai acquis mon chalet à Gallix en 2003 et je suis toujours émerveillée par la beauté de la nature chaque fois que j’y réside. C’est avec enthousiasme que je participe au projet de COOP de Gallix afin de valoriser notre belle localité, d’offrir des services à la communauté et d'encourager notre économie locale.*\"
-    email: administration@coopdegallix.ca
+    email: admin@coopdegallix.ca
   - name: Claude Mallet
     position: Représentant des membres de soutien
     img: /img/team/cm.jpg
