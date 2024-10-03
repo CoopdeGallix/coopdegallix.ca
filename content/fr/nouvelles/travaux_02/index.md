@@ -3,7 +3,7 @@ title: "🚧 MISE À JOUR: Construction de notre Coop! 🏗️"
 subtitle: Bonjour - Hello - Kuei!
 # faire un résumé de 2-3 lignes de l'article
 summary: "Le travaux ont débuté et se poursuivent!!"
-featured: true
+featured: false
 date: 2024-08-02
 img: ./img.png
 tags:
