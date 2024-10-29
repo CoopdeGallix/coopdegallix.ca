@@ -71,7 +71,7 @@ CA:
     email: admin@coopdegallix.ca
   - name: Robert Michaud
     position: Administrateur
-    img: /img/team/avatar.png
+    img: /img/team/rm.jpeg
     # text: \"*Le bonheur vient de l’attention prêtée aux petites choses, je suis persuadé que la Coop de Gallix va contribuer à la joie de vivre de notre communauté.*\"
     email: tresorerie@coopdegallix.ca
   - name: Samuel Guay
