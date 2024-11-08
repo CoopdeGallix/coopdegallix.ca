@@ -69,16 +69,6 @@ CA:
     img: /img/team/dl.jpg
     text: \"*Un beau village, des résidents formidables, un sentiment d'appartenance, un désir d'améliorer la qualité de vie des citoyens, tant de bonnes raisons ont motivé mon implication dans ce beau projet.*\"
     email: admin@coopdegallix.ca
-  - name: Robert Michaud
-    position: Administrateur
-    img: /img/team/rm.jpeg
-    # text: \"*Le bonheur vient de l’attention prêtée aux petites choses, je suis persuadé que la Coop de Gallix va contribuer à la joie de vivre de notre communauté.*\"
-    email: tresorerie@coopdegallix.ca
-  - name: Samuel Guay
-    position: Administrateur
-    img: /img/team/sg.png
-    text: \"*Je tiens à m'impliquer au sein du projet, car je crois fermement aux retombées positives qu'il aura sur notre communauté et l'environnement.*\"
-    email: admin@coopdegallix.ca
   - name: Ann-Édith Daoust
     position: Administratrice
     img: /img/team/aed.jpg
@@ -89,6 +79,16 @@ CA:
     img: /img/team/mp.jpg
     text: \"*Étant natif de Gallix, j'ai toujours aimé m'impliquer au sein de la communauté pour créer un sentiment de bien-être dans notre village! Je crois que le projet de coop est important pour rassembler la population et aura un impact majeur à long terme!!*\"
     email: vice-presidence@coopdegallix.ca
+  - name: Robert Michaud
+    position: Administrateur
+    img: /img/team/rm.jpeg
+    text: \"*Notre coopérative fait déjà la fierté de notre village. Son importance ainsi que son utilité sont déjà évidents. Je suis très fier de participer à cette belle aventure collective.*\"
+    email: tresorerie@coopdegallix.ca
+  - name: Samuel Guay
+    position: Administrateur
+    img: /img/team/sg.png
+    text: \"*Je tiens à m'impliquer au sein du projet, car je crois fermement aux retombées positives qu'il aura sur notre communauté et l'environnement.*\"
+    email: admin@coopdegallix.ca
   - name: Serge Landry
     position: Secrétaire-Trésorier
     img: /img/team/sl.jpg
@@ -98,7 +98,7 @@ CA:
     position: Administratrice
     img: /img/team/cb.jpg
     text: |
-      \"*Originaire de la Côte Nord, j'y suis profondément attachée! J’ai acquis mon chalet à Gallix en 2003 et je suis toujours émerveillée par la beauté de la nature chaque fois que j’y réside. C’est avec enthousiasme que je participe au projet de COOP de Gallix afin de valoriser notre belle localité, d’offrir des services à la communauté et d'encourager notre économie locale.*\"
+      \"*Originaire de la Côte-Nord, j'y suis profondément attachée! J’ai acquis mon chalet à Gallix en 2003 et je suis toujours émerveillée par la beauté de la nature chaque fois que j’y réside. C’est avec enthousiasme que je participe au projet de COOP de Gallix afin de valoriser notre belle localité, d’offrir des services à la communauté et d'encourager notre économie locale.*\"
     email: admin@coopdegallix.ca
   - name: Claude Mallet
     position: Représentant des membres de soutien
