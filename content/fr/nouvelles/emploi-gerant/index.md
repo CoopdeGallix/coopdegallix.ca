@@ -3,17 +3,18 @@ title: "🤝 Offre d'emploi - Gérant.e général.e 🤝"
 subtitle: Bonjour - Hello - Kuei!
 # faire un résumé de 2-3 lignes de l'article
 summary: "On est très fébrile d'annoncer notre première offre d'emploi pour notre Coop! Partagez en grand nombre et aidez-nous à trouver la perle rare! 👀🤝📧 "
-featured: true
+featured: false
 date: 2024-10-02
 img: ./gerant.jpg
-aliases:
-- /emploi/
 tags:
   - communiqué
   - emploi
 ---
 
+## MISE À JOUR: Poste comblé; nous avons trouvé la perle rare! Merci à tous ceux qui ont partagé l'offre d'emploi et qui ont contribué à la recherche de la personne idéale pour notre COOP! 🎉🎉🎉
+
 ![](gerant.jpg)
+
 
 
 On est très fébrile d'annoncer notre 1ère offre d'emploi pour notre COOP de Gallix! Partagez en grand nombre et aidez-nous à trouver la perle rare! 👀🤝📧 
