@@ -12,6 +12,11 @@ tags:
   - communiqué
   - emploi
 ---
+ 
+## MISE À JOUR: Postes comblés; nous avons trouvé les perles rares! Merci à tous ceux qui ont partagé les offres d'emploi et qui ont contribué à la recherche de nos employés! 🎉🎉🎉
+
+PS: Si tu veux vraiment travailler à la Coop, n'hésite pas à nous faire parvenir ton CV, qui sait, nous aurons peut-être un poste pour toi! 
+
 
 ![](annonce_commis_01.png)
 
