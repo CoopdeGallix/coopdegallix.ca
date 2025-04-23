@@ -3,7 +3,7 @@ title: "🤝 Offre d'emploi - commis 🤝"
 subtitle: Bonjour - Hello - Kuei!
 # faire un résumé de 2-3 lignes de l'article
 summary: "Nous sommes très fébriles d'annoncer notre offre d'emploi pour les commis! Partagez en grand nombre et aidez-nous à trouver les personnes idéales!"
-featured: true
+featured: false
 date: 2024-12-02
 img: ./annonce_commis_01.png
 aliases:
