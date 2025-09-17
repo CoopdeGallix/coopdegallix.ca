@@ -15,7 +15,7 @@ Chers membres de notre belle communauté,
 
 Nous avons le plaisir de vous convier à un moment de partage et de convivialité autour d'un délicieux souper spaghetti!
 
-📅 Vendredi 20 septembre à 18h00
+📅 Samedi 20 septembre à 18h00
 
 📍 Centre communautaire de Gallix
 
