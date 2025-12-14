@@ -2,7 +2,7 @@
 title: 🕸️👻 Party d’Halloween à Gallix! 👻🕸️ - 1er novembre 2025
 subtitle: Bonjour - Hello - Kuei!
 summary: La Coop de Gallix est fière d'organiser une soirée Halloween pour vous annoncer une méchante bonne nouvelle!
-featured: true
+featured: false
 draft: false
 date: 2025-10-13
 img: ./CSG_halloween_2025.jpeg
