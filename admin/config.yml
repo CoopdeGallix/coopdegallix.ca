@@ -15,7 +15,7 @@ collections:
     folder: 'content/fr/nouvelles'
     create: true
     nested: 
-      depth: 1
+      depth: 3
       meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
     slug: '{{year}}-{{slug}}'
     media_folder: ''
@@ -27,5 +27,5 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string', hint: "Titre de l'article" }
       - { label: 'Publish Date', name: 'date', widget: 'datetime', hint: "Date de publication" }
       - { label: "Description pour la page d'accueil", name: 'summary', widget: 'string', hint: "MAX 100 caractères pour la page d'accueil" }
+      - { label: 'Image', name: 'img', widget: image, hint: "Idealement, les images ne devraient pas être être trop volumineuses. L'image ajoutée ici est pour la page d'accueil" }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Image', name: 'img', widget: image, hint: 'Idealement, les images ne devraient pas être être trop volumineuses.' }
