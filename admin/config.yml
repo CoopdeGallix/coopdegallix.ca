@@ -5,18 +5,27 @@ backend:
   repo: "coopdegallix/coopdegallix.ca"
   branch: pixel # Branch to update
   base_url: https://decap.coopdegallix.ca
+
 media_folder: static/img
 public_folder: /img
+
 collections:
   - name: 'nouvelles'
     label: 'Nouvelles'
     folder: 'content/fr/nouvelles'
     create: true
+    nested: 
+      depth: 1
+      meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
     slug: '{{year}}-{{slug}}'
+    media_folder: ''
+    public_folder: ''
     editor:
       preview: true
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: "Brouillon", name: "draft", widget: "boolean", default: true, hint: "true ou false. Si brouillon = true, ne sera pas publié, mais sauvegardé seulement"}
+      - { label: 'Title', name: 'title', widget: 'string', hint: "Titre de l'article" }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', hint: "Date de publication" }
+      - { label: "Description pour la page d'accueil", name: 'summary', widget: 'string', hint: "MAX 100 caractères pour la page d'accueil" }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Image', name: 'img', widget: image, hint: 'Idealement, les images ne devraient pas être être trop volumineuses.' }
