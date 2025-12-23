@@ -4,9 +4,9 @@ backend:
   name: git-gateway
   repo: "coopdegallix/coopdegallix.ca"
   branch: pixel # Branch to update
-  base_url: https://decap.coopdegallix.ca
-  site_domain: https://coopdegallix.ca
-  auth_endpoint: /auth
+  site_domain:
+    base_url: https://decap.coopdegallix.ca
+    auth_endpoint: /auth
 media_folder: static/img
 public_folder: /img
 collections:
