@@ -1,0 +1,22 @@
+site_url: https://coopdegallix.ca
+search: false
+backend:
+  name: git-gateway
+  repo: "coopdegallix/coopdegallix.ca"
+  branch: pixel # Branch to update (optional; defaults to master)
+  base_url: https://decap.coopdegallix.ca
+media_folder: static/img
+public_folder: /img
+collections:
+  - name: 'nouvelles'
+    label: 'Nouvelles'
+    folder: 'content/fr/nouvelles'
+    create: true
+    slug: '{{year}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
