@@ -1,9 +1,9 @@
 site_url: https://coopdegallix.ca
 search: false
 backend:
-  name: git-gateway
+  name: github
   repo: "coopdegallix/coopdegallix.ca"
-  branch: pixel # Branch to update (optional; defaults to master)
+  branch: pixel # Branch to update
   base_url: https://decap.coopdegallix.ca
 media_folder: static/img
 public_folder: /img
