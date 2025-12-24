@@ -6,9 +6,17 @@ backend:
   branch: pixel # Branch to update
   base_url: https://decap.coopdegallix.ca
 
+sortable_fields: ['date', 'title']
+view_filters:
+  - label: 'Articles publiés en 2025'
+    field: date
+    pattern: '2025'
+  - label: Brouillons
+    field: draft
+    pattern: true
+
 media_folder: static/img
 public_folder: /img
-
 collections:
   - name: 'nouvelles'
     label: 'Nouvelles'
