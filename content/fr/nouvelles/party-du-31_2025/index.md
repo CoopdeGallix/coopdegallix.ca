@@ -1,39 +1,50 @@
 ---
-title: Souper et soirée festive du 31 décembre 2025
-subtitle: Bonjour - Hello - Kuei!
-summary: Bye-bye 2025, bonjour 2026! Venez célébrer avec nous le passage au nouvel an!
-featured: true
 draft: false
-date: 2025-12-01
+summary: Bye-bye 2025, bonjour 2026! Venez célébrer avec nous le passage au nouvel an!
 img: ./CSG_nouvel-an_cover.jpeg
+featured: true
+date: 2025-12-01
+subtitle: Bonjour - Hello - Kuei!
+title: 🎉✨ PARTY DU NOUVEL AN 2026 ! ✨🎉
 tags:
   - événement
 aliases:
-- /evenement/
+  - /evenement/
 ---
+## MISE À JOUR: TOUS LES BILLETS ONT ÉTÉ VENDUS EN 24H!!! MERCI!!
 
 ![Affiche de l'activité](CSG_nouvel-an_cover.jpeg)
 
-## Message d'annonce 
+## Message d'annonce
 
-Bonjour,
+Venez célébrer l’arrivée de la nouvelle année avec nous lors d’une soirée mémorable et festive!
 
-La Coop de Gallix a le plaisir de vous inviter à une soirée festive pour célébrer le passage au nouvel an le 31 décembre 2025 à 18h00 au centre communautaire de Gallix:
+📅 **Mercredi 31 décembre**
 
-Les portes ouvrent à partir de 17:30 pour le souper avec la présence de Turbot Mariné, un excellent groupe de musique d'ici!
+🕕 **Début : 18h**
 
-* Apportez vos consommations
-* Repas traditionnel des fêtes
+📍 Centre communautaire de Gallix, 524 rue Lapierre
 
-Que vous soyez en famille, seul.e ou accompagné.e, vous êtes les bienvenu.e.s à passer la dernière soirée de 2025 avec la grande famille de la Coop! 
+🥳 Souper et soirée !
 
-Prix des billets: **20$/enfant**, **35$/adulte** ou 20$ après 22h pour venir danser!
+🍽 Repas traditionnel cipaille
 
-Réservez rapidement vos places en achetant vos billets à la Coop au 551 rue Thériault, 418-766-4319.
+🥤 Formule “Apportez votre boisson”
 
-N'attendez pas ! Réservez dès maintenant ! Plaisir garanti !
+🎶 À la musique : Turbot Mariné, groupe formé par Jacob Beaulieu • Émile Dubé • Matthieu Boudreault • Nathan Claveau
 
-Au plaisir de célébrer la nouvelle année avec vous tous !
+💰 Tarifs :\
+ • Souper + soirée :\
+👤 Adulte : 35$\
+👦 Enfant : 20$\
+ • Soirée seulement (après 22h) : 20$
+
+🎟 Billets en vente sous peu à la Coop
+551, rue Thériault • 418 766-4319
+
+Au profit de la Coop de Gallix
+
+✨ Venez célébrer en grand et commencer 2026 du bon pied ! 🎆
 
 ![signature](/img/votre_ca.svg)
 
