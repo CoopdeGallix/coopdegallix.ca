@@ -38,8 +38,8 @@ params:
     newsletter:
       title: Abonnez-vous à notre infolettre
       subtitle: |
-        Nous envoyons une infolettre résumant les derniers avancements <span class="fw-bolder">au maximum une fois par mois.</span>
-        <br> PS: Nous ne divulguerons jamais votre adresse.
+        Nous envoyons une infolettre au maximum une fois par mois.
+        <span class="fw-bolder">Nous ne divulguerons jamais vos informations.</span>
       btn: M'abonner
       text_note: Une page ouvrira afin de confirmer que vous n'êtes pas un robot 🤖!
 

@@ -26,27 +26,17 @@
             </div>
             {{ with .Site.Params.footer.newsletter }}
             <div class="col-12 col-md-4 mb-5 mb-lg-0">
-                <span class="h5">{{.title | markdownify }}</span>
-                <p class="text-muted font-small mt-2"> {{ .subtitle  | markdownify }}
+                <div style="position:relative;width:100%;overflow:hidden;">
+                    <iframe 
+                        title='Signup form powered by Zeffy' 
+                        style='border:0;width:100%;height:100%;min-height:400px;'
+                        src='https://www.zeffy.com/fr-CA/embed/newsletter-form/abonnez-vous-a-notre-infolettre-5' 
+                        allowTransparency="true">
+                    </iframe>
+                </div>
+                                <p class="text-muted font-small mt-2"> {{ .subtitle  | markdownify }}
                 </p>
 
-                <form action="https://tinyletter.com/coopdegallix" method="post" target="popupwindow"
-                onsubmit="window.open('https://tinyletter.com/coopdegallix', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-                    <div class="form-row mb-2">
-                        <div class="col-12">
-                            <label class="h6 fw-normal text-muted d-none" for="tlemail">Adresse courriel</label>
-                            <input type="email" class="form-control mb-2" placeholder="exemple@site.ca" name="email"
-                                aria-label="Subscribe form" id="tlemail" required>
-                        </div>
-                        <div class="col-12 d-grid">
-                            <input type="hidden" value="1" name="embed" />
-                            <button type="submit" value="Subscribe" class="btn btn-tertiary" data-loading-text="Sending">
-                                <span>{{ .btn | markdownify }}</span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-                <p class="text-muted font-small m-0">{{ .text_note | markdownify }}</p>
             </div>
             {{ end }}
         </div>
