@@ -6,7 +6,6 @@ featured: true
 date: 2026-05-01
 tags:
   - communiqué
-slug: /sondage
 ---
 
 Dans le but de mieux orienter le développement des activités et de répondre aux besoins de notre communauté, la Coop de Gallix a lancé un [sondage](https://forms.gle/uuRyhkuu1uBoiqmG7). Merci à celles et ceux qui y ont déjà répondu.
@@ -23,4 +22,4 @@ Bonne nouvelle pour les autres: nous vous avons écoutés et avons rendu le sond
 
 ---
 
-PS: Nous vous invitons à [suivre notre page Facebook](https://facebook.com/CoopdeGallix). Si vous avez des réflexions, commentaires ou questions, merci de les acheminer à l'équipe à [info@coopdegallix.ca](mailto:info@coopdegallix.ca) ou par téléphone au [4187664319](tel:4187664319).
+PS: Nous vous invitons à [suivre notre page Facebook](https://facebook.com/CoopdeGallix). Si vous avez des réflexions, commentaires ou questions, merci de les acheminer à l'équipe à [info@coopdegallix.ca](mailto:info@coopdegallix.ca) ou par téléphone au [418-766-4319](tel:4187664319).
