@@ -2,7 +2,7 @@
 draft: false
 summary: Bye-bye 2025, bonjour 2026! Venez célébrer avec nous le passage au nouvel an!
 img: ./CSG_nouvel-an_cover.jpeg
-featured: true
+featured: false
 date: 2025-12-01
 subtitle: Bonjour - Hello - Kuei!
 title: 🎉✨ PARTY DU NOUVEL AN 2026 ! ✨🎉
