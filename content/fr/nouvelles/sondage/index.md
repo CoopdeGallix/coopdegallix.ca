@@ -6,6 +6,7 @@ featured: true
 date: 2026-05-01
 tags:
   - communiqué
+slug: /sondage
 ---
 
 Dans le but de mieux orienter le développement des activités et de répondre aux besoins de notre communauté, la Coop de Gallix a lancé un [sondage](https://forms.gle/uuRyhkuu1uBoiqmG7). Merci à celles et ceux qui y ont déjà répondu.
