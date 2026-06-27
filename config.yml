@@ -44,10 +44,10 @@ params:
       text_note: Une page ouvrira afin de confirmer que vous n'êtes pas un robot 🤖!
 
 defaultContentLanguage: fr
-languageCode: fr-ca
+locale: fr-ca
 languages:
   fr:
-    languageName: Français
+    label: Français
     contentDir: content/fr
     weight: 1
     menu:
