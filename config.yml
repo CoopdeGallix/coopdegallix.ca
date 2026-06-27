@@ -44,9 +44,9 @@ params:
       text_note: Une page ouvrira afin de confirmer que vous n'êtes pas un robot 🤖!
 
 defaultContentLanguage: fr
-locale: fr-ca
 languages:
   fr:
+    locale: fr-ca
     label: Français
     contentDir: content/fr
     weight: 1
