@@ -1,64 +1,53 @@
 ---
-title: À propos
-layout: about
+title: La coop
+translationKey: coop
+layout: coop
 hero:
-  title: Coopérative de solidarité de Gallix
-  text: "*Une présence active dans sa communauté*"
-  # Au service de <br class="d-none d-md-inline"> notre communauté
-  btn: Mission, vision et valeurs
-  btn_url: "#mission"
-  img: /img/illustrations/coop_gallix.svg
+  title: Un commerce qui appartient à Gallix.
+  lead: La Coop de Gallix est une coopérative de solidarité. Elle existe pour garder un magasin général ouvert au village, pas pour enrichir des actionnaires.
 
-# Mission, vision et valeurs de la coopérative de solidarité de Gallix
+histoire:
+  kicker: Notre histoire
+  title: D'hier à aujourd'hui
+  photo: /img/photos/deboisement-2023.jpg
+  photo_alt: Sept bénévoles posent sur le terrain fraîchement déboisé de la future coop, au printemps 2023.
+  lead: En 2017, le seul dépanneur de Gallix ferme ses portes et le village devient un [désert alimentaire](https://collectivitesviables.org/articles/desert-alimentaire.aspx). Dès 2018, des citoyens se regroupent pour y remédier.
+  text: Après une rencontre publique qui réunit plus de 100 personnes, l'achat du terrain de la rue Thériault et des années de démarches bénévoles, la Coop ouvre ses portes le 16 janvier 2025. [Lire le récit de l'ouverture](/nouvelles/ouverture/).
 
-mission: |
-  **Participer activement** à l’amélioration de la qualité de vie des citoyens et citoyennes de Gallix en assurant l’accès aux biens et services de première nécessité. <br> **Favoriser** les rencontres et participer au rayonnement de Gallix par l’accueil et la promotion des produits, activités et talents locaux. <br> **Développer** les sentiments de fierté et d’appartenance.
+dates:
+  title: Quelques dates
+  items:
+    - annee: "2017"
+      texte: Fermeture du dépanneur de Gallix. [L'article de Radio-Canada](https://ici.radio-canada.ca/nouvelle/1063132/fermeture-depanneur-gallix-sept-iles)
+    - annee: "2018"
+      texte: Un comité provisoire se forme pour répondre au besoin de la communauté.
+    - annee: "2022"
+      texte: Rencontre publique devant plus de 100 personnes, puis élection du premier conseil d'administration. [L'article de Radio-Canada](https://ici.radio-canada.ca/nouvelle/1885959/alimentation-desert-alimentaire-depanneur-citoyens)
+    - annee: "2025"
+      texte: Ouverture officielle de la Coop de Gallix, le 16 janvier.
 
-vision: |
-  À la Coop de solidarité de Gallix, nous aspirons à devenir un catalyseur du développement socio-économique du secteur Gallix.
-  <br>Nous visons un développement durable axé sur les besoins présents et futurs de la communauté, continuellement à la recherche d’amélioration.
-  <br>Nous souhaitons contribuer à la reconnaissance de Gallix comme point d’intérêt incontournable pour le tourisme et les amateurs et amatrices de plein air.
+mission:
+  mission_title: Mission
+  mission: "**Participer activement** à l'amélioration de la qualité de vie des citoyens et citoyennes de Gallix en assurant l'accès aux biens et services de première nécessité. <br> **Favoriser** les rencontres et participer au rayonnement de Gallix par l'accueil et la promotion des produits, activités et talents locaux. <br> **Développer** les sentiments de fierté et d'appartenance."
+  vision_title: Vision
+  vision: "À la Coop de solidarité de Gallix, nous aspirons à devenir un catalyseur du développement socio-économique du secteur Gallix. <br>Nous visons un développement durable axé sur les besoins présents et futurs de la communauté, continuellement à la recherche d'amélioration. <br>Nous souhaitons contribuer à la reconnaissance de Gallix comme point d'intérêt incontournable pour le tourisme et les amateurs et amatrices de plein air."
+  valeurs_title: "Nos valeurs :"
+  valeurs: [Accueil, Ouverture, Intégrité, Entraide, Solidarité, Bienveillance]
 
-valeurs:
-  - valeur: Accueil
-  - valeur: Ouverture
-  - valeur: Intégrité
-  - valeur: Entraide
-  - valeur: Solidarité
-  - valeur: Bienveillance
-
-section:
-  title: Nos aspirations
-  text: |
-    Consciente de son potentiel humain et social, tout en étant situé dans un désert alimentaire, la **COOP de Solidarité de Gallix** désire être à l'écoute des besoins de ses membres et offrir à toute la population de Gallix, aux passants, aux vacanciers et vacancières et aux touristes, des produits d'épicerie et de premières nécessité, casse-croûte et café, et ce, dans un lieu de rencontre attrayant, chaleureux et convivial. La COOP espère ainsi contribuer à la rétention de la population de Gallix et à l'attraction de nouvelles familles tout en contribuant à la création d'emplois stables, intéressants et rémunérateurs.
-
-    Consciente également de l'effet de la surconsommation des combustibles fossiles sur les changements climatiques, elle vise à en minimiser l'impact en offrant les produits de consommation essentiels à proximité des citoyens en favorisant les produits locaux.
-#   Minimiser les déplacements non essentiels, offrir des produits de qualité au meilleur prix, accueillir sa clientèle dans un environnement chaleureux, être sensible aux besoins de sa population, des ses employé(e)s, tout en étant conscient que l'équilibre et le bon sens sont des clés d'un développement prospère et durable, voilà la mission que nous nous sommes donnée.
-  img: /img/illustrations/cafe.svg
-
-hist:
-  title: <span class="fw-bold">Notre</span> histoire
-  item:
-    - title: 2017 - Fermeture du dépanneur de Gallix
-      text: Gallix devient un [désert alimentaire](https://collectivitesviables.org/articles/desert-alimentaire.aspx) à la suite de la fermeture de l'unique dépanneur à Gallix. [Cliquez ici pour lire l'article de Radio-Canada à ce sujet.](https://ici.radio-canada.ca/nouvelle/1063132/fermeture-depanneur-gallix-sept-iles)
-      img:
-    - title: 2018 - Constitution d'un comité provisoire
-      text: Un comité provisoire a été créé afin de répondre au besoin de la communauté.
-    - title: 2020-2021 - Pandémie, ralentissement des activités
-      text: Alors que les démarches avançaient bien, la pandémie du COVID-19 a ralenti le projet. [Cliquez ici pour écouter une entrevue réalisée en 2020 par Radio-Canada avec Serge Landry, impliqué depuis le début et désormais secrétaire du conseil d'administration](https://ici.radio-canada.ca/ohdio/premiere/emissions/boreale-138/segments/entrevue/169922/gallix-depanneur-coop-moilisation-citoyenne).
-      img: /img/illustrations/covid-19.svg
-    - title: 2022 - Rencontre publique avec la communauté
-      text: Plus de 100 personnes étaient présentes et le besoin s'est fait sentir! [Cliquez ici pour lire l'article de Radio-Canada à ce sujet.](https://ici.radio-canada.ca/nouvelle/1885959/alimentation-desert-alimentaire-depanneur-citoyens)
-      img: /img/illustrations/ag.svg
-    - title: 2022 - Élection officielle du conseil d'administration
-      text: 9 membres siègent sur le CA et veillent à l'avancement du projet.
-      img: /img/illustrations/CA.svg
-    - title: 2025 - Ouverture officielle de la Coop de Gallix!
-      text: "16 janvier 2025 marquera un tournant dans l'histoire de Gallix avec l'ouverture de sa Coop! Voir [notre article résumant l'ouverture ici ✨](/nouvelles/ouverture/)!"
+principes:
+  title: Comment fonctionne une coop
+  items:
+    - title: Dirigée par ses membres
+      text: Un membre, un vote. Les grandes décisions se prennent en assemblée.
+    - title: Les surplus restent ici
+      text: Ce que le magasin dégage est réinvesti dans le commerce et dans la communauté.
+    - title: Ouverte à tout le monde
+      text: "Membre ou non, résident ou de passage : tout le monde peut magasiner à la coop."
 
 CA:
-  title: Conseil d'administration
-  subtitle:
+  kicker: Gouvernance
+  title: Le conseil d'administration
+  subtitle: Des membres bénévoles, élus par les membres à l'assemblée générale annuelle.
   member:
   - name: Mathieu Porlier
     position: Président
@@ -74,7 +63,7 @@ CA:
     position: Représentant des membres de soutien
     img: /img/team/cm.jpg
     text: |
-      \"*Étant citoyen de Gallix depuis au moins 10 ans, je considère 3 éléments importants à un village: une école, une église et … une épicerie! Ces édifices, au coeur d’un village, rassemblent la communauté, attirent de nouveaux résidants et permettent l’épanouissement de tous. C’est ainsi avec beaucoup d’enthousiasme que je participe au conseil d’administration dont les efforts vont permettre d’ériger le bâtiment manquant!*\"
+      \"*Étant citoyen de Gallix depuis au moins 10 ans, je considère 3 éléments importants à un village: une école, une église et … une épicerie! Ces édifices, au coeur d'un village, rassemblent la communauté, attirent de nouveaux résidants et permettent l'épanouissement de tous. C'est ainsi avec beaucoup d'enthousiasme que je participe au conseil d'administration dont les efforts vont permettre d'ériger le bâtiment manquant!*\"
     email: ca@coopdegallix.ca
   - name: Marie-Claude Chiasson
     position: Secrétaire
@@ -107,4 +96,22 @@ CA:
     img: /img/team/sg.png
     text: \"*Je tiens à m'impliquer au sein du projet, car je crois fermement aux retombées positives qu'il aura sur notre communauté et l'environnement.*\"
     email: ca@coopdegallix.ca
+
+aga:
+  title: Assemblée générale annuelle
+  text: Les membres y sont convoqués chaque année. La date est annoncée sur le babillard.
+  liens:
+    - label: Règlement de régie interne (PDF)
+      url: /fichiers/CSG_RRI-1_2023-05-29.pdf
+    - label: Tous les documents de la coopérative
+      url: /documents/
+
+emploi:
+  title: Travailler à la coop
+  text: Envie de vous joindre à l'équipe ? Déposez votre CV au comptoir ou écrivez-nous.
+  link: Nous écrire
+
+cta:
+  title: Prenez part à votre magasin.
+  text: Une part sociale de 100 $, payée une seule fois, et vous avez votre mot à dire sur l'avenir de la coop.
 ---

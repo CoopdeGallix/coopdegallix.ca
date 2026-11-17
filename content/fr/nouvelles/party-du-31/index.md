@@ -1,6 +1,6 @@
 ---
 title: Souper et soirée festive du 31 décembre 2023
-subtitle: Bonjour - Hello - Kuei!
+subtitle: 
 summary: Bye-bye 2023, bonjour 2024! Venez célébrer avec nous le passage au nouvel an!
 featured: false
 draft: false

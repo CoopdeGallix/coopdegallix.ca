@@ -1,7 +1,7 @@
 ---
 title: Souper et soirée disco le 9 mars prochain!
-subtitle: Bonjour - Hello - Kuei!
-summary: Rejoignez-nous sur la piste de dance et laissez la fièvre disco s’emparer de vous! 🕺🎶
+subtitle: 
+summary: Rejoignez-nous sur la piste de dance et laissez la fièvre disco s'emparer de vous! 🕺🎶
 featured: false
 draft: false
 date: 2024-02-14
@@ -18,7 +18,7 @@ aliases:
 
 Rejoignez-nous sur la piste de dance et laissez la fièvre disco s'emparer de vous! 🕺🎶
 
-On se crêpe le toupet, on sort nos vieux vêtements des boules à mites et c’est parti pour toute une soirée! 🪩🎤 
+On se crêpe le toupet, on sort nos vieux vêtements des boules à mites et c'est parti pour toute une soirée! 🪩🎤 
 
 Veuillez contacter Doriane au [418-961-9049](tel:418-961-9049) pour acheter vos billets.
 

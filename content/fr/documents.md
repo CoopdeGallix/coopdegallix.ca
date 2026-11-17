@@ -1,9 +1,9 @@
 ---
 title: Liste des documents disponibles
 ---
-* [Parts privilégiées - Aide-mémoire aux investisseurs](/fichiers/CSG_aide-memoire-aux-investisseurs.pdf).
+* [Parts privilégiées - Aide-mémoire aux investisseurs](/fichiers/CSG_aide-memoire-aux-investisseurs_v1.pdf).
 * [Règlement de régie interne numéro 1 de la Coopérative](/fichiers/CSG_RRI-1_2023-05-29.pdf).
-* [Règlement de régie interne numéro 2 (Règlement d’emprunt et d’attribution de garanties) de la Coopérative](/fichiers/CSG_RRI-2_2022-05-25.pdf).
+* [Règlement de régie interne numéro 2 (Règlement d'emprunt et d'attribution de garanties) de la Coopérative](/fichiers/CSG_RRI-2_2022-05-25.pdf).
 * [Règlement de régie interne numéro 3 (Règlement sur la médiation des différents) de la Coopérative](/fichiers/CSG_RRI-3_2022-05-25.pdf).
 * [Formulaire d'adhésion pour un membre utilisateur](/fichiers/CSG_formulaire-adhesion_membre-utilisateur_v2.pdf).
 * [Formulaire d'adhésion pour un membre de soutien](/fichiers/CSG_formulaire-adhesion_membre-soutien_v2.pdf).

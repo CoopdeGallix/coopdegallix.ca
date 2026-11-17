@@ -1,29 +1,84 @@
 {{ define "main" }}
-  <!-- Hero -->
-  <section class="section section-header pb-11 bg-primary text-white">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-12 col-xl-8 text-center">
-                  <h1 class="display-2 mb-3">Nos coordonnées</h1>
-                  <p class="lead text-center">Tous les moyens sont bons pour entrer en communication avec nous, nous voulons entendre vos idées, conseils, opinions à propos du projet!</p>
-                  <p class="lead text-center">Le plus simple est d'utiliser le formulaire situé au bas de la page ou bien nous écrire directement à <a href="mailto:info@coopdegallix.ca">info@coopdegallix.ca</a>.</p>
+{{- $m := site.Data.magasin -}}
+{{- $lang := site.Language.Lang -}}
+{{- $p := .Params -}}
 
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Section -->
-          <div class="section py-0">
-            <div class="container mt-n10">
-              <div class="row">
-                <div class="col-12">
-                  <iframe class="map rounded" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1601.74108438309!2d-66.62008860000005!3d50.133869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c91e9df1b2ed819%3A0x43fce3ce59df6a13!2sCoop%20de%20Gallix!5e1!3m2!1sen!2sus!4v1766677115835!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-                  <p class="lead text-center">Le vue satellite n'est pas à jour, mais on vous jure que vous pouvez venir visiter la Coop au centre du noyau urbain de Gallix.</p>
-              </div>
-          </div>
-      </div>
+<section class="page-hero bg-papier">
+  <div class="wrap" style="padding-bottom: 56px">
+    <div class="page-hero__text" style="gap: 16px">
+      {{ partial "crumbs.html" . }}
+      <h1 class="h-page">{{ .Title }}</h1>
+      <p class="lead">{{ $p.lead }}</p>
+    </div>
   </div>
+</section>
 
-  {{ partial "components/forms.html" . }}
+<section class="bg-papier" style="padding-bottom: 80px">
+  <div class="wrap row" style="gap: 40px; align-items: stretch">
+    <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+      <div class="info">{{ partial "icon.html" "pin" }}
+        <address><span class="info__label">{{ i18n "address" }}</span><span class="info__value">{{ $m.adresse.rue }}</span><span class="muted" style="font-size: 17px">{{ $m.adresse.ville }}{{ with $m.adresse.code_postal }} {{ . }}{{ end }}</span></address>
+      </div>
+      {{ with $m.telephone }}<a class="info" href="{{ partial "fn/tel.html" . }}">{{ partial "icon.html" "phone" }}<span><span class="info__label">{{ i18n "phone" }}</span><span class="info__value">{{ . }}</span></span></a>{{ end }}
+      {{ with $m.courriel }}<a class="info" href="mailto:{{ . }}">{{ partial "icon.html" "mail" }}<span><span class="info__label">{{ i18n "email" }}</span><span class="info__value">{{ . }}</span></span></a>{{ end }}
+      <div class="card" style="gap: 4px">
+        <table class="hours">
+          <caption>{{ i18n "store_hours" }}</caption>
+          <tbody>
+            {{ partial "heures-rangees.html" . }}
+            {{- range $m.heures_autres }}{{ $nom := index .nom $lang }}{{ with index .texte $lang }}
+            <tr><th scope="row">{{ $nom }}</th><td>{{ . }}</td></tr>
+            {{- end }}{{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+      {{ partial "carte.html" (dict "id" "carte") }}
+      <div class="row" style="gap: 12px 20px; align-items: center">
+        <a class="btn" href="{{ $m.adresse.itineraire }}" rel="noopener">{{ i18n "directions" }} {{ partial "icon.html" "arrow" }}</a>
+        {{ with index $m.adresse.repere $lang }}<span class="muted">{{ . }}</span>{{ end }}
+      </div>
+    </div>
+  </div>
+</section>
 
+<section id="ecrire" class="bg-sable rule-top" style="padding-block: 80px 88px">
+  <div class="wrap form-wrap">
+    <div class="panel panel--carte" style="background: var(--papier)">
+      <div class="col" style="gap: 8px">
+        <h2 class="h-sub">{{ $p.form.title }}</h2>
+        {{ with $p.form.text }}<p>{{ . }}</p>{{ end }}
+      </div>
+      <form class="form" action="https://api.staticforms.xyz/submit" method="post">
+        <input type="hidden" name="accessKey" value="{{ $m.formulaire_cle }}">
+        <input type="hidden" name="replyTo" value="@">
+        <input type="hidden" name="redirectTo" value="{{ i18n "url_success" | absURL }}">
+        <input class="hp" type="text" name="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="form__row">
+          <label class="field">{{ i18n "form_name" }}<input type="text" name="name" autocomplete="name" required></label>
+          <label class="field">{{ i18n "form_email" }}<input type="email" name="email" autocomplete="email" required></label>
+        </div>
+        <div class="form__row">
+          <label class="field">{{ i18n "form_phone_optional" }}<input type="tel" name="phone" autocomplete="tel"></label>
+          <label class="field">{{ i18n "form_subject" }}<select name="subject">{{ range $p.form.sujets }}<option>{{ . }}</option>{{ end }}</select></label>
+        </div>
+        <label class="field" style="flex: none">{{ i18n "form_message" }}<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">{{ i18n "form_send" }}</button>
+      </form>
+    </div>
+    <aside>
+      {{- range $p.cartes }}
+      {{- $val := "" }}{{ with .data }}{{ $val = index $m . }}{{ end }}
+      {{- if or $val .text }}
+      <div class="card card--papier" style="padding: 26px; gap: 4px">
+        <h3 class="h-card">{{ .title }}</h3>
+        {{ with .text }}<p>{{ . }}</p>{{ end }}
+        {{ with $val }}{{ if strings.HasPrefix . "http" }}<a href="{{ . }}" rel="noopener" style="font-weight: 700; padding-top: 8px">Facebook</a>{{ else }}<a href="mailto:{{ . }}" style="font-weight: 700; overflow-wrap: anywhere">{{ . }}</a>{{ end }}{{ end }}
+      </div>
+      {{- end }}
+      {{- end }}
+    </aside>
+  </div>
+</section>
 {{ end }}

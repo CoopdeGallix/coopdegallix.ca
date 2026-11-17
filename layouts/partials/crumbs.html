@@ -1,0 +1,1 @@
+<nav class="crumbs" aria-label="{{ i18n "nav_breadcrumb" }}"><a href="{{ i18n "url_home" }}">{{ i18n "home" }}</a>{{ with .Parent }}{{ if not .IsHome }}<span aria-hidden="true">/</span><a href="{{ .RelPermalink }}">{{ .Params.crumb | default .Title }}</a>{{ end }}{{ end }}<span aria-hidden="true">/</span><span>{{ .Params.crumb | default .Title }}</span></nav>

@@ -1,0 +1,108 @@
+tagline: Magasin général coopératif
+home: Accueil
+skip: Aller au contenu
+nav_main: Navigation principale
+nav_footer: Liens du pied de page
+nav_breadcrumb: Fil d'Ariane
+menu_toggle: Ouvrir ou fermer le menu
+logo_alt: Logo de la Coop de Gallix
+become_member: Devenir membre
+
+open_today: "Ouvert aujourd'hui :"
+open_daily: "Ouvert tous les jours :"
+closed_today: Fermé aujourd'hui
+closed: Fermé
+today: Aujourd'hui
+hours_caption: Heures d'ouverture
+store_hours: Heures du magasin
+hours_sep: " à "
+
+at_the_pump: À la pompe
+cents_per_litre: ¢ le litre
+price_updated: "Mis à jour le %s. Le prix affiché à la pompe prévaut."
+
+specials_week: Les spéciaux de la semaine
+specials_valid: "En vigueur du %s au %s."
+specials_stock: Jusqu'à épuisement des stocks.
+specials_flyer: Circulaire complète (PDF)
+specials_empty_title: Les spéciaux changent chaque semaine.
+specials_empty: Ils sont affichés en magasin et annoncés sur notre page Facebook.
+specials_follow: Voir notre page Facebook
+specials_all: Tous les spéciaux de la semaine
+specials_grocery: Spéciaux épicerie
+specials_hardware: Spéciaux quincaillerie
+member_price: "Prix membre :"
+dept_epicerie: Épicerie
+dept_quincaillerie: Quincaillerie
+
+call_store: Appeler le magasin
+write_store: Écrire au magasin
+directions: Obtenir l'itinéraire
+all_hours: Toutes les heures
+map_title: Carte – emplacement de la Coop de Gallix
+
+address: Adresse
+phone: Téléphone
+email: Courriel
+
+news_all: Toutes les nouvelles
+news_read: Lire la suite
+news_published: "Publiée le %s"
+news_prev: Nouvelle précédente
+news_next: Nouvelle suivante
+news_back: Retour au babillard
+news_fr_only: ""
+
+footer_about: Le magasin général coopératif de Gallix. Épicerie, quincaillerie et essence, au service du village.
+footer_store: Magasin
+footer_coop: La coop
+footer_contact: Contact
+footer_gas: Essence et propane
+footer_specials: Spéciaux de la semaine
+footer_story: Notre histoire
+footer_board: Babillard
+footer_documents: Documents
+footer_hours: Heures et itinéraire
+footer_newsletter: Infolettre
+footer_rights: Tous droits réservés.
+footer_nonprofit: La Coop de Gallix est une coopérative à but non lucratif.
+other_lang: English
+
+form_name: Nom
+form_first_name: Prénom
+form_email: Courriel
+form_phone_optional: Téléphone (facultatif)
+form_phone: Téléphone
+form_email_optional: Courriel (facultatif)
+form_subject: Sujet
+form_message: Message
+form_send: Envoyer le message
+form_address: Adresse
+form_city: Ville
+form_postal: Code postal
+form_send_request: Envoyer ma demande
+
+e404_title: Page introuvable
+e404_text: Le lien que vous avez suivi semble brisé. Si vous pensez qu'il s'agit d'une erreur, merci de nous en aviser.
+e404_home: Retour à l'accueil
+
+# Adresses des pages (utilisées par l'en-tête, le pied de page et les boutons)
+url_home: /
+url_groceries: /epicerie/
+url_hardware: /quincaillerie/
+url_gas: /essence/
+url_coop: /a-propos/
+url_member: /adhesion/
+url_contact: /contact/
+url_news: /nouvelles/
+url_documents: /documents/
+url_success: /succes/
+url_catalogue: /catalogue/
+
+catalogue: Catalogue
+catalogue_kicker: Avant de partir de la maison
+catalogue_title: Voyez ce qu'on a, faites votre liste.
+catalogue_text: Plus de 2 500 articles en magasin, classés par rayon. Cochez ce qu'il vous faut et imprimez votre liste d'achats.
+catalogue_btn: Ouvrir le catalogue
+catalogue_see: Voir les articles
+catalogue_all: Parcourir tout le catalogue

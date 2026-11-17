@@ -1,6 +1,6 @@
 ---
 title: Brunch de Pâques au sous-sol de l'église le 31 mars
-subtitle: Bonjour - Hello - Kuei!
+subtitle: 
 summary: Venez déjeuner pour Pâques avec la grande famille de la Coop!
 featured: false
 draft: false

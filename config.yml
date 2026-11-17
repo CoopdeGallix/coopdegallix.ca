@@ -1,6 +1,6 @@
-baseURL: https://coopdegallix.ca/
+baseURL: https://v2.coopdegallix.ca/
 title: Coop de Gallix
-# navbar
+
 params:
   fullname: Coopérative de solidarité de Gallix
   title: Coopérative de solidarité de Gallix
@@ -12,115 +12,71 @@ params:
   org_name: Coopérative de solidarité de Gallix
   description: La Coop de Gallix est un projet qui a vu le jour afin de sortir le secteur de Gallix d'un désert alimentaire.
 
-  nav:
-    title: Coop de Gallix
-    logo_light: /img/brand/logo_nav_light.svg
-    logo_light_alt: Logo light
-    logo_dark: /img/brand/logo_nav_dark.svg
-    logo_dark_alt: Logo dark
-    btn:
-      title: Devenir membre
-      url: /adhesion
-
-  networking:
-    site: coopdegallix.ca
-    username: CoopdeGallix
-    social:
-    - link: https://facebook.com/CoopdeGallix
-      icon: fab fa-facebook
-    - link: https://instagram.com/CoopdeGallix
-      icon: fab fa-instagram
-    - link: https://github.com/CoopdeGallix
-      icon: fab fa-github
-
-  footer:
-    title: Coopérative de solidarité de Gallix <br> *Une présence active dans notre communauté*
-    newsletter:
-      title: Abonnez-vous à notre infolettre
-      subtitle: |
-        Nous envoyons une infolettre au maximum une fois par mois.
-        <span class="fw-bolder">Nous ne divulguerons jamais vos informations.</span>
-      btn: M'abonner
-      text_note: Une page ouvrira afin de confirmer que vous n'êtes pas un robot 🤖!
-
 defaultContentLanguage: fr
+defaultContentLanguageInSubdir: false
+languageCode: fr-ca
+
 languages:
   fr:
-    locale: fr-ca
-    label: Français
+    languageName: Français
+    languageCode: fr-ca
     contentDir: content/fr
     weight: 1
+    params:
+      description: Le magasin général coopératif de Gallix. Épicerie, quincaillerie et essence, au service du village.
     menu:
       main:
-      - name: À propos
-        url: /a-propos/
+      - name: Épicerie
+        pageRef: /epicerie
         weight: 10
-      # - name: Mission
-      #   url: /a-propos/#mission
-      #   weight: 10
-      #   parent: À propos
-      # - name: Équipe
-      #   url: /a-propos/#equipe
-      #   weight: 10
-      #   parent: À propos
-      - name: Adhésion
-        params:
-          class:
-        pre:
-        url: /adhesion/
+      - name: Quincaillerie
+        pageRef: /quincaillerie
         weight: 20
-      - name: Nouvelles
-        url: /nouvelles/
+      - name: Essence
+        pageRef: /essence
         weight: 30
-      - name: Partenaires
-        url: /partenaires/
+        params:
+          long: Essence et propane
+      - name: Catalogue
+        pageRef: /catalogue
+        weight: 35
+      - name: La coop
+        pageRef: /a-propos
+        weight: 50
+      - name: Nous joindre
+        pageRef: /contact
+        weight: 60
+  en:
+    languageName: English
+    languageCode: en-ca
+    contentDir: content/en
+    weight: 2
+    params:
+      description: Gallix's co-operative general store. Groceries, hardware and gas, serving the village.
+    menu:
+      main:
+      - name: Groceries
+        pageRef: /groceries
+        weight: 10
+      - name: Hardware
+        pageRef: /hardware
+        weight: 20
+      - name: Gas
+        pageRef: /gas
         weight: 30
-      - name: Contact
-        url: /contact/
-        weight: 40
-
-  # en:
-  #   languageName: English
-  #   languageAbb: EN
-  #   contentDir: content/en
-  #   weight: 2
-    # menu:
-    #   main:
-    #   - name: About
-    #     url: /about/
-    #     weight: 10
-    #   - name: Membership
-    #     params:
-    #       class:
-    #     pre:
-    #     url: /register/
-    #     weight: 20
-    #   - name: Latest news
-    #     url: /news/
-    #     weight: 30
-
-  # - name: About FORRT
-  #   url: ""
-  #   weight: 10
-  #   identifier: about
-  # - name: About FORRT
-  #   url: /about/us
-  #   weight: 11
-  #   parent: about
-
+        params:
+          long: Gas and propane
+      - name: Catalogue
+        pageRef: /catalogue
+        weight: 35
+      - name: The co-op
+        pageRef: /the-coop
+        weight: 50
+      - name: Contact us
+        pageRef: /contact
+        weight: 60
 
 markup:
   goldmark:
     renderer:
       unsafe: true
-
-# For more info on Modules -> https://gohugo.io/hugo-modules/configuration/
-module:
-  hugoVersion:
-    min: 0.92.0
-  imports:
-    # - path: github.com/twbs/icons
-    #   mounts:
-    #   - source: icons
-    #     target: assets/hugo-icons/icons
-    - path: github.com/samguay/hugo-mod-bootstrap-scss/v5

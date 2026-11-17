@@ -1,0 +1,6 @@
+{{- /* Rangée de data.magasin.heures -> « 6 h à 22 h » ou « Fermé » */ -}}
+{{- $s := i18n "closed" -}}
+{{- if and .ouvre .ferme -}}
+  {{- $s = print (partial "fn/heure.html" .ouvre) (i18n "hours_sep") (partial "fn/heure.html" .ferme) -}}
+{{- end -}}
+{{- return $s -}}

@@ -1,6 +1,6 @@
 ---
 title: Journée Cabane à sucre + Souper du 15 avril 2023
-subtitle: Bonjour - Hello - Kuei!
+subtitle: 
 summary: Maquillage, princesses, mini chevaux, tire d'érable,
   concours de bûcherons en plus d'un souper avec le duo James et Barry, tout y sera lors de cette journée légendaire à Gallix! Venez célébrer avec nous!
 featured: false

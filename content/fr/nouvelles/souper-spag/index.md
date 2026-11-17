@@ -1,6 +1,6 @@
 ---
 title: 🍝 Souper spaghetti communautaire à Gallix! 🍝
-subtitle: Bonjour - Hello - Kuei!
+subtitle: 
 summary: Rejoignez-nous pour une soirée de partage, de saveurs et de belle ambiance! 🌟
 featured: false
 date: 2025-09-01

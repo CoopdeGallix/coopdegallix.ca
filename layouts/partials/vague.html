@@ -1,0 +1,2 @@
+{{- /* Vague de transition. Usage : partial "vague.html" (dict "id" "a" "de" "#f8f3ea" "vers" "#1d486a") */ -}}
+<svg class="vague" aria-hidden="true" style="background: {{ .de }}"><defs><pattern id="vague-{{ .id }}" width="160" height="44" patternUnits="userSpaceOnUse"><path d="M0 22 Q 40 -6 80 22 T 160 22 V44 H0 Z" fill="{{ .vers }}"/></pattern></defs><rect width="100%" height="44" fill="url(#vague-{{ .id }})"/></svg>

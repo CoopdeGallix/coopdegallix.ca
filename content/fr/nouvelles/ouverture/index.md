@@ -1,6 +1,6 @@
 ---
 title: "✨ Une ouverture couronnée de succès! ✨"
-subtitle: Bonjour - Hello - Kuei!
+subtitle: 
 # faire un résumé de 2-3 lignes de l'article
 summary: "Célébrons ensemble de l'ouverture de la Coop de Gallix. ++++ remerciements à notre communauté pour son accueil chaleureux"
 featured: false

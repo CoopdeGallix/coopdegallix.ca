@@ -1,6 +1,6 @@
 ---
 title: Souper et soirée d'Halloween - 21 octobre 2023
-subtitle: Bonjour - Hello - Kuei!
+subtitle: 
 summary: Déguisements, souper, musique, plaisir, il est temps de venir célébrer avec nous la super bonne nouvelle!
 featured: false
 draft: false

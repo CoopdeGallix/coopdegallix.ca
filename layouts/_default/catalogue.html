@@ -1,0 +1,75 @@
+{{ define "main" }}
+{{- $m := site.Data.magasin -}}
+{{- $cat := site.Data.catalogue -}}
+{{- $lang := site.Language.Lang -}}
+{{- $p := .Params -}}
+
+<section class="page-hero bg-papier no-print">
+  <div class="wrap" style="padding-bottom: 40px">
+    <div class="page-hero__text" style="gap: 16px">
+      {{ partial "crumbs.html" . }}
+      <h1 class="h-page">{{ .Title }}</h1>
+      <p class="lead" style="max-width: 720px">{{ $p.lead }}</p>
+      <p class="small" style="max-width: 720px">{{ $p.note }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-papier" style="padding-bottom: 96px">
+  <div class="wrap catalogue" id="catalogue">
+    <div class="catalogue__rayons no-print">
+      <form class="recherche" role="search">
+        <label class="field">{{ $p.recherche }}
+          <input type="search" id="catalogue-recherche" placeholder="{{ $p.recherche_exemple }}" autocomplete="off">
+        </label>
+        <p class="small" id="catalogue-resume" aria-live="polite"></p>
+      </form>
+      <p class="notice" id="catalogue-aucun" hidden>{{ $p.aucun }}</p>
+
+      {{- range $cat.categories }}
+      <details class="cat" data-cat="{{ .id }}" id="{{ .id }}">
+        <summary><span class="cat__titre">{{ index . $lang }}</span><span class="cat__choisis"></span><span class="cat__n">{{ .n }}</span></summary>
+        <ul class="picks">
+          {{- range where $cat.articles "c" .id }}
+          <li><label class="pick"><input type="checkbox" data-article value="{{ .id }}"><span class="pick__nom">{{ .n }}</span>{{ if .l }}<span class="pick__ici">{{ $p.ici }}</span>{{ end }}</label></li>
+          {{- end }}
+        </ul>
+      </details>
+      {{- end }}
+    </div>
+
+    <aside class="liste" id="ma-liste" aria-labelledby="liste-titre">
+      <div class="liste__entete only-print">
+        <img src="/img/brand/logo-coop.svg" alt="" width="64" height="64">
+        <div><strong>Coop de Gallix</strong><span>{{ $m.adresse.rue }}, {{ $m.adresse.ville }} · {{ $m.telephone }}</span></div>
+      </div>
+      <h2 class="h-card h-card--lg" id="liste-titre">{{ $p.liste.title }} <span class="liste__compte no-print">(<span data-liste-compte>0</span>)</span><span class="only-print liste__date" id="date-impression"></span></h2>
+      <p class="muted" id="liste-vide">{{ $p.liste.vide }}</p>
+      <div id="liste-contenu"></div>
+      <form class="liste__ajout no-print" id="liste-ajout">
+        <label class="field">{{ $p.liste.ajout }}
+          <span class="liste__ajout-ligne"><input type="text" maxlength="80" placeholder="{{ $p.liste.ajout_exemple }}"><button class="btn btn--light btn--sm" type="submit">{{ $p.liste.ajouter }}</button></span>
+        </label>
+      </form>
+      <div class="liste__actions no-print">
+        <button class="btn btn--vert" type="button" data-liste-action="imprimer" disabled>{{ $p.liste.imprimer }}</button>
+        <button class="btn btn--light" type="button" data-liste-action="vider" disabled>{{ $p.liste.vider }}</button>
+      </div>
+      <p class="small no-print">{{ $p.liste.memoire }}</p>
+      <p class="small only-print">{{ $p.liste.pied }}</p>
+    </aside>
+  </div>
+</section>
+
+<div class="liste-barre no-print">
+  <a href="#ma-liste"><strong>{{ $p.liste.title }}</strong> · <span data-liste-compte>0</span> {{ $p.liste.articles }}</a>
+  <button class="btn btn--vert btn--sm" type="button" data-liste-action="imprimer" disabled>{{ $p.liste.imprimer }}</button>
+</div>
+
+<script type="application/json" id="catalogue-textes">{{ dict "retirer" $p.liste.retirer "autres" $p.liste.autres "confirmer" $p.liste.confirmer "resultats" $p.resultats | jsonify | safeJS }}</script>
+{{- $js := resources.Get "js/catalogue.js" }}
+{{- if hugo.IsProduction }}{{ $js = $js | minify | fingerprint }}{{ end }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ end }}
+
+{{ define "avant-pied" }}<div class="no-print">{{ partial "vague.html" (dict "id" "pied" "de" "#f8f3ea" "vers" "#163a56") }}</div>{{ end }}

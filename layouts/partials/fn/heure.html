@@ -1,0 +1,13 @@
+{{- /* "6:00" -> « 6 h » (fr) ou "6 a.m." (en) */ -}}
+{{- $p := split (string .) ":" -}}
+{{- $h := int (strings.TrimLeft "0" (index $p 0) | default "0") -}}
+{{- $m := "00" -}}{{- if gt (len $p) 1 -}}{{- $m = index $p 1 -}}{{- end -}}
+{{- $s := "" -}}
+{{- if eq site.Language.Lang "en" -}}
+  {{- $suf := cond (ge $h 12) "p.m." "a.m." -}}
+  {{- $h12 := mod $h 12 -}}{{- if eq $h12 0 -}}{{- $h12 = 12 -}}{{- end -}}
+  {{- $s = printf "%d%s %s" $h12 (cond (eq $m "00") "" (print ":" $m)) $suf -}}
+{{- else -}}
+  {{- $s = printf "%d h%s" $h (cond (eq $m "00") "" (print " " $m)) -}}
+{{- end -}}
+{{- return $s -}}

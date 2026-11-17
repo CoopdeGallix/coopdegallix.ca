@@ -1,0 +1,15 @@
+{{- /* Cartes de spéciaux. Contexte : dict "items" (liste déjà filtrée) */ -}}
+{{- $lang := site.Language.Lang -}}
+<div class="row">
+  {{- range .items }}
+  <article class="special">
+    <div class="special__photo">{{ with .photo }}<img src="{{ . }}" alt="" loading="lazy">{{ else }}{{ partial "icon.html" "star" }}{{ end }}</div>
+    <div class="special__body">
+      <span class="special__dept special__dept--{{ .rayon }}">{{ i18n (print "dept_" .rayon) }}</span>
+      <h3>{{ index .produit $lang | default .produit.fr }}</h3>
+      <span class="special__price">{{ .prix }}</span>
+      {{ with .prix_membre }}<span class="small">{{ i18n "member_price" }} {{ . }}</span>{{ end }}
+    </div>
+  </article>
+  {{- end }}
+</div>

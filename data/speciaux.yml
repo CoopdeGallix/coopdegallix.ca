@@ -1,0 +1,15 @@
+# Spéciaux de la semaine. Tant que `items` est vide, la page d'accueil affiche
+# un message invitant à passer en magasin, et les pages Épicerie et
+# Quincaillerie masquent leur section « Spéciaux ».
+
+du: ""            # ex. 2026-11-19
+au: ""            # ex. 2026-11-25
+circulaire: ""    # ex. /fichiers/circulaire.pdf
+
+items: []
+# items:
+#   - produit: { fr: "Pain tranché", en: "Sliced bread" }
+#     rayon: epicerie            # epicerie ou quincaillerie
+#     prix: "3,49 $"
+#     prix_membre: "2,99 $"      # facultatif
+#     photo: /img/speciaux/pain.jpg   # facultatif

@@ -1,0 +1,72 @@
+# Renseignements du magasin, affichés partout sur le site (FR et EN).
+# Un champ laissé vide ("") n'est tout simplement pas affiché.
+
+telephone: "418-766-4319"
+courriel: info@coopdegallix.ca
+courriel_adhesion: adhesion@coopdegallix.ca
+courriel_ca: ca@coopdegallix.ca
+facebook: https://facebook.com/CoopdeGallix
+instagram: https://instagram.com/CoopdeGallix
+
+adresse:
+  rue: 551, rue Thériault
+  ville: Gallix (Québec)
+  code_postal: ""
+  repere:
+    fr: ""          # ex. « Au cœur du village, en face de… »
+    en: ""
+  itineraire: https://www.google.com/maps/dir/?api=1&destination=Coop+de+Gallix%2C+551+rue+Th%C3%A9riault%2C+Sept-%C3%8Eles%2C+QC
+  carte_embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1601.74108438309!2d-66.62008860000005!3d50.133869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c91e9df1b2ed819%3A0x43fce3ce59df6a13!2sCoop%20de%20Gallix!5e1!3m2!1sen!2sus!4v1766677115835!5m2!1sen!2sus
+
+# Heures d'ouverture. `jours` : 0 = dimanche, 1 = lundi … 6 = samedi.
+# Format 24 h (« 6:00 », « 22:00 »). Pour un jour fermé, laisser ouvre et ferme vides.
+heures:
+  - nom: { fr: Lundi au vendredi, en: Monday to Friday }
+    jours: [1, 2, 3, 4, 5]
+    ouvre: "6:00"
+    ferme: "22:00"
+  - nom: { fr: Samedi, en: Saturday }
+    jours: [6]
+    ouvre: "6:00"
+    ferme: "22:00"
+  - nom: { fr: Dimanche, en: Sunday }
+    jours: [0]
+    ouvre: "6:00"
+    ferme: "22:00"
+
+# Lignes supplémentaires du tableau de la page « Nous joindre » (texte libre).
+heures_autres:
+  - nom: { fr: Jours fériés, en: Holidays }
+    texte: { fr: "", en: "" }
+  - nom: { fr: Pompes à essence, en: Gas pumps }
+    texte: { fr: "", en: "" }
+
+# Station-service
+essence:
+  afficher_prix: false        # true pour afficher les prix ci-dessous
+  prix_mis_a_jour: ""         # ex. 2026-11-16
+  heures_pompes: { fr: "", en: "" }
+  paiement: { fr: "", en: "" }
+  carburants:
+    - nom: { fr: Ordinaire, en: Regular }
+      type: { fr: Essence, en: Gasoline }
+      prix: ""                # ¢ le litre, ex. "164,9"
+    - nom: { fr: Intermédiaire, en: Mid-grade }
+      type: { fr: Essence, en: Gasoline }
+      prix: ""
+    - nom: { fr: Suprême, en: Supreme }
+      type: { fr: Essence, en: Gasoline }
+      prix: ""
+    - nom: { fr: Diesel, en: Diesel }
+      type: { fr: Diesel, en: Diesel }
+      prix: ""
+  propane:
+    echange: ""               # ex. "24,99 $"
+    neuve: ""
+    format: { fr: "", en: "" }  # ex. « 20 lb »
+
+# Adhésion
+part_sociale: 100             # $
+
+# Formulaires (staticforms.xyz)
+formulaire_cle: 555e5e4b-6587-4183-9723-1774ecdeef16

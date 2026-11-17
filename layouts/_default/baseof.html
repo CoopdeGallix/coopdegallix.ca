@@ -1,25 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.Language.Locale | default "fr" }}">
-  {{ partial "head" . }}
-
+<html lang="{{ site.Language.LanguageCode | default "fr-ca" }}" class="no-js">
+  {{ partial "head.html" . }}
   <body>
-    <!-- Code that all your templates share, like a header -->
-    <header class="header-global">
-
-      {{ partial "nav.html" . }}
-    </header>
-
-    <main>
-    {{/*  {{ partial "preloader.html" . }}  */}}
-    
-    {{ block "main" . }}
-    <!-- The part of the page that begins to differ between templates -->
-    {{ end }}
-  </main>
-    {{ block "footer" . }}
-    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
-    {{ end }}
+    {{ partial "header.html" . }}
+    <main id="contenu">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ block "avant-pied" . }}{{ partial "vague.html" (dict "id" "pied" "de" "#ebdece" "vers" "#163a56") }}{{ end }}
     {{ partial "footer.html" . }}
-    {{ partial "scripts.html" . }}
   </body>
 </html>

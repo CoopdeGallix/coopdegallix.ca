@@ -1,6 +1,6 @@
 ---
 title: Le projet de recherche EffICAS recrute.. pour un emploi!
-subtitle: Bonjour - Hello - Kuei!
+subtitle: 
 summary: 
 featured: false
 date: 2023-08-21

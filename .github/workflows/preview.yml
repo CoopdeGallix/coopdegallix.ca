@@ -1,0 +1,33 @@
+name: Aperçu v2.coopdegallix.ca
+
+on:
+  push:
+    branches:
+      - redesign
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.163.3'
+          extended: true
+
+      - name: Build
+        run: hugo --minify --gc --environment preview --baseURL https://v2.coopdegallix.ca/
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.V2_DEPLOY_KEY }}
+          external_repository: CoopdeGallix/v2
+          publish_branch: gh-pages
+          publish_dir: ./public
+          cname: v2.coopdegallix.ca

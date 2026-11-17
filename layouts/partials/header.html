@@ -1,0 +1,56 @@
+{{- $m := site.Data.magasin -}}
+{{- $lang := site.Language.Lang -}}
+{{- /* Heures : texte par défaut (sans JavaScript) + table par jour pour le script */ -}}
+{{- $jours := dict -}}
+{{- $uniforme := true -}}
+{{- $premier := partial "fn/heures.html" (index $m.heures 0) -}}
+{{- range $m.heures -}}
+  {{- $txt := partial "fn/heures.html" . -}}
+  {{- if ne $txt $premier }}{{ $uniforme = false }}{{ end -}}
+  {{- $ouvert := and .ouvre .ferme -}}
+  {{- range .jours }}{{ $jours = merge $jours (dict (string .) (cond $ouvert $txt "")) }}{{ end -}}
+{{- end -}}
+{{- $alt := "" -}}
+{{- with .Translations }}{{ $alt = (index . 0).RelPermalink }}{{ else }}{{ with site.Home.Translations }}{{ $alt = (index . 0).RelPermalink }}{{ end }}{{ end -}}
+<a class="skip" href="#contenu">{{ i18n "skip" }}</a>
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar__info">
+      <span class="topbar__hours">{{ partial "icon.html" "star" }}<span><span data-heures-label>{{ if $uniforme }}{{ i18n "open_daily" }}{{ else }}{{ index (index $m.heures 0).nom $lang }} :{{ end }}</span> <span data-heures-jour>{{ $premier }}</span></span></span>
+      {{ with $m.telephone }}<a class="topbar__phone" href="{{ partial "fn/tel.html" . }}">{{ . }}</a>{{ end }}
+    </div>
+    <div class="lang">
+      {{- if eq $lang "fr" }}
+      <span aria-current="true">FR</span>
+      {{ with $alt }}<a href="{{ . }}" lang="en" hreflang="en" aria-label="English">EN</a>{{ end }}
+      {{- else }}
+      {{ with $alt }}<a href="{{ . }}" lang="fr" hreflang="fr" aria-label="Français">FR</a>{{ end }}
+      <span aria-current="true">EN</span>
+      {{- end }}
+    </div>
+  </div>
+</div>
+<script type="application/json" id="heures-data">{{ dict "jours" $jours "ouvert" (i18n "open_today") "ferme" (i18n "closed_today") | jsonify | safeJS }}</script>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ i18n "url_home" }}">
+      <img src="/img/brand/logo-coop.svg" alt="{{ i18n "logo_alt" }}" width="64" height="64">
+      <span class="brand__text">
+        <span class="brand__name">Coop de Gallix</span>
+        <span class="brand__tag">{{ i18n "tagline" }}</span>
+      </span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="{{ i18n "menu_toggle" }}" aria-controls="nav" aria-expanded="false">{{ partial "icon.html" "menu" }}</button>
+    <nav class="nav" id="nav" aria-label="{{ i18n "nav_main" }}">
+      {{- $page := . }}
+      {{- range site.Menus.main }}
+      {{- $e := . }}
+      <a href="{{ .URL }}"{{ if $page.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>
+        {{- with .Params.long }}<span class="nav__short">{{ $e.Name }}</span><span class="nav__long">{{ . }}</span>{{ else }}{{ .Name }}{{ end -}}
+      </a>
+      {{- end }}
+      <a class="btn btn--sm" href="{{ i18n "url_member" }}"{{ if eq .RelPermalink (i18n "url_member") }} aria-current="page"{{ end }}>{{ i18n "become_member" }}</a>
+    </nav>
+  </div>
+</header>

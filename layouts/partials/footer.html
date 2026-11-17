@@ -1,59 +1,57 @@
-<footer class="footer pt-6 pb-4 bg-primary text-white">
-    <div class="container">
-        <div class="row justify-content-around">
-            <div class="col-md-4 text-center">
-                <img class="navbar-brand-dark mb-4" height="150" src="{{ .Site.Params.nav.logo_dark }}"
-                    alt="Logo light">
-                <p>{{ .Site.Params.footer.title | markdownify }} </p>
-                <ul class="social-buttons mb-5 mb-lg-0">
-                    {{ range .Site.Params.networking.social }}
-                    <li>
-                        <a href="{{ .link }}" aria-label="social link"
-                            class="icon-white me-2">
-                            <span class="{{ .icon }}"></span>
-                        </a>
-                    </li>
-                    {{ end }}
-                </ul>
-            </div>
-            <div class="col-6 col-md-2 mb-5 mb-lg-0 text-center">
-                <span class="h5">Menu</span>
-                <ul class="footer-links mt-2">
-                  {{ range .Site.Menus.main }}
-                    <li><a target="_blank" href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a></li>
-                  {{ end }}
-                </ul>
-            </div>
-            {{ with .Site.Params.footer.newsletter }}
-            <div class="col-12 col-md-4 mb-5 mb-lg-0">
-                <div style="position:relative;width:100%;overflow:hidden;">
-                    <iframe 
-                        title='Signup form powered by Zeffy' 
-                        style='border:0;width:100%;height:100%;min-height:400px;'
-                        src='https://www.zeffy.com/fr-CA/embed/newsletter-form/abonnez-vous-a-notre-infolettre-5' 
-                        allowTransparency="true">
-                    </iframe>
-                </div>
-                                <p class="text-muted font-small mt-2"> {{ .subtitle  | markdownify }}
-                </p>
-
-            </div>
-            {{ end }}
+{{- $m := site.Data.magasin -}}
+{{- $alt := "" -}}
+{{- with .Translations }}{{ $alt = (index . 0).RelPermalink }}{{ else }}{{ with site.Home.Translations }}{{ $alt = (index . 0).RelPermalink }}{{ end }}{{ end -}}
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="/img/brand/logo-coop-blanc.svg" alt="Coop de Gallix" width="112" height="112">
+        <p>{{ i18n "footer_about" }}</p>
+      </div>
+      <nav class="footer__nav" aria-label="{{ i18n "nav_footer" }}">
+        <div>
+          <strong>{{ i18n "footer_store" }}</strong>
+          <a href="{{ i18n "url_groceries" }}">{{ i18n "dept_epicerie" }}</a>
+          <a href="{{ i18n "url_hardware" }}">{{ i18n "dept_quincaillerie" }}</a>
+          <a href="{{ i18n "url_gas" }}">{{ i18n "footer_gas" }}</a>
+          <a href="{{ i18n "url_catalogue" }}">{{ i18n "catalogue" }}</a>
+          <a href="{{ i18n "url_home" }}#speciaux">{{ i18n "footer_specials" }}</a>
         </div>
-        <hr class="">
-        <div class="row">
-            <div class="col mb-md-0">
-                <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
-                    <p class="fw-normal font-small mb-0">© {{ .Site.Params.fullname }} - <span
-                            class="current-year"> {{ now }} </span> - Tous droits réservés </p>
-                </div>
-            </div>
+        <div>
+          <strong>{{ i18n "footer_coop" }}</strong>
+          <a href="{{ i18n "url_coop" }}">{{ i18n "footer_story" }}</a>
+          <a href="{{ i18n "url_member" }}">{{ i18n "become_member" }}</a>
+          <a href="{{ i18n "url_news" }}"{{ if ne site.Language.Lang "fr" }} lang="fr"{{ end }}>{{ i18n "footer_board" }}</a>
+          <a href="{{ i18n "url_documents" }}"{{ if ne site.Language.Lang "fr" }} lang="fr"{{ end }}>{{ i18n "footer_documents" }}</a>
         </div>
+        <div>
+          <strong>{{ i18n "footer_contact" }}</strong>
+          <a href="{{ i18n "url_contact" }}">{{ i18n "footer_hours" }}</a>
+          {{ with $m.facebook }}<a href="{{ . }}" rel="noopener">Facebook</a>{{ end }}
+          {{ with $m.instagram }}<a href="{{ . }}" rel="noopener">Instagram</a>{{ end }}
+          <a href="https://www.zeffy.com/fr-CA/newsletter-form/abonnez-vous-a-notre-infolettre-5" rel="noopener">{{ i18n "footer_newsletter" }}</a>
+          {{ with $alt }}<a href="{{ . }}" lang="{{ cond (eq site.Language.Lang "fr") "en" "fr" }}">{{ i18n "other_lang" }}</a>{{ end }}
+        </div>
+      </nav>
     </div>
+    <div class="footer__legal">
+      <span>© {{ now.Year }} {{ site.Params.fullname }}. {{ i18n "footer_rights" }}</span>
+      <span>{{ i18n "footer_nonprofit" }}</span>
+    </div>
+  </div>
 </footer>
-
-<noscript>
-  <!-- Matomo Image Tracker-->
-  <img referrerpolicy="no-referrer-when-downgrade" src="https://matomo.coopdegallix.ca/matomo.php?idsite=1&amp;rec=1&amp;action_name=Coop+de+Gallix" style="border:0" alt="" />
-  <!-- End Matomo -->
-</noscript>
+<script>
+(function () {
+  var t = document.querySelector('.menu-toggle'), n = document.getElementById('nav');
+  if (t && n) t.addEventListener('click', function () {
+    t.setAttribute('aria-expanded', String(n.classList.toggle('is-open')));
+  });
+  try {
+    var H = JSON.parse(document.getElementById('heures-data').textContent);
+    var d = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Toronto' })).getDay();
+    var h = H.jours[d];
+    document.querySelectorAll('[data-heures-label]').forEach(function (el) { el.textContent = h ? H.ouvert : H.ferme; });
+    document.querySelectorAll('[data-heures-jour]').forEach(function (el) { el.textContent = h || (el.hasAttribute('data-heures-seul') ? H.ferme : ''); });
+  } catch (e) {}
+})();
+</script>

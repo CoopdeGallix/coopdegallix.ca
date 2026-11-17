@@ -1,0 +1,4 @@
+{{- $lang := site.Language.Lang -}}
+{{- range site.Data.magasin.heures }}
+<tr><th scope="row">{{ index .nom $lang }}</th><td>{{ partial "fn/heures.html" . }}</td></tr>
+{{- end }}

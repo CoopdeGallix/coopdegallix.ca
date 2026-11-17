@@ -1,73 +1,34 @@
 <head>
   <meta charset="utf-8">
-  <!-- Blocks may include default content. -->
-  <title>
-    {{ block "title" . }}
-    {{ .Site.Title }}
-    {{ end }}
-  </title>
-  <!-- Primary Meta Tags -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="title" content="{{ .Site.Title }}">
-  <meta name="author" content="Coopérative de solidarité de Gallix">
-  <meta name="description" content="Coopérative de solidarité de Gallix">
-  <meta name="image" content="/CSG_cover_1.png">
-  <!-- SEO stuff -->
-  <meta name="google-site-verification" content="jat_spHSR0bOUKr1DmTxe6x0ukIyMb2fhLBubkxiDeU" />
-  <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-<link rel="manifest" href="/img/favicon/site.webmanifest">
-<link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#ffffff">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ block "title" . }}{{ if .IsHome }}{{ site.Title }} – {{ i18n "tagline" }}{{ else }}{{ .Title }} – {{ site.Title }}{{ end }}{{ end }}</title>
+  {{- $desc := .Description | default .Params.lead | default site.Params.description }}
+  <meta name="description" content="{{ $desc | plainify }}">
+  <meta name="author" content="{{ site.Params.fullname }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{- range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{- end }}
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ $desc | plainify }}">
+  <meta property="og:image" content="{{ "CSG_cover_1.png" | absURL }}">
+  <meta property="og:type" content="website">
+  {{- if eq hugo.Environment "preview" }}
+  <meta name="robots" content="noindex, nofollow">
+  {{- end }}
+  <meta name="google-site-verification" content="jat_spHSR0bOUKr1DmTxe6x0ukIyMb2fhLBubkxiDeU">
 
-<!-- Fontawesome -->
-<link type="text/css" href="{{ "/vendor/fortawesome/fontawesome-free/css/all.min.css" | absURL}}" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <meta name="theme-color" content="#163a56">
 
-  {{/* Load Bootstrap SCSS. */}}
-  {{ $options := dict "enableSourceMap" true }}
-  {{ if hugo.IsProduction}}
-  {{ $options := dict "enableSourceMap" false "outputStyle" "compressed" }}
-  {{ end }}
-  {{ $styles := resources.Get "scss/pixel.scss" }}
-  {{ $styles = $styles | css.Sass $options }}
-  {{ if hugo.IsProduction }}
-  {{ $styles = $styles | fingerprint }}
-  {{ end }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  {{- $css := resources.Get "css/site.css" }}
+  {{- if hugo.IsProduction }}{{ $css = $css | minify | fingerprint }}{{ end }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
-  {{/* Load Bootstrap JS. */}}
-  {{ $bootstrap := resources.Get "vendor/bootstrap/bootstrap.bundle.js" }}
-  {{ $indexjs := resources.Get "js/index.js" }}
-  {{ $pixel_js := resources.Get "js/pixel.js" }}
-  {{ $js := slice $bootstrap $pixel_js $indexjs | resources.Concat "js/global.js" }}
-  {{ $params := dict }}
-  {{ $sourceMap := cond hugo.IsProduction "" "inline" }}
-  {{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2018" "params" $params }}
-  {{ $js = $js | js.Build $opts }}
-  {{ if hugo.IsProduction }}
-  {{ $js = $js | fingerprint }}
-  {{ end }}
-  <script src="{{ $js.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $js.Data.Integrity }}"{{ end }}></script>
-
-  <!-- Matomo -->
-  <script>
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//matomo.coopdegallix.ca/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '1']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <noscript><p><img src="//matomo.coopdegallix.ca/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-  <!-- End Matomo Code -->
-
-
-</head>
+ </head>

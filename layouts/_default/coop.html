@@ -1,0 +1,120 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+
+<section class="page-hero bg-papier">
+  <div class="wrap">
+    <div class="page-hero__text">
+      {{ partial "crumbs.html" . }}
+      <h1 class="h-page" style="max-width: 760px">{{ $p.hero.title }}</h1>
+      <p class="lead">{{ $p.hero.lead }}</p>
+    </div>
+    <img class="page-hero__logo" src="/img/brand/logo-coop.svg" alt="" aria-hidden="true" width="240" height="240">
+  </div>
+</section>
+
+{{ with $p.histoire }}
+<section id="histoire" class="bg-papier section section--flush-top" style="padding-bottom: 80px">
+  <div class="wrap split">
+    {{ with .photo }}<img class="photo photo--43" src="{{ . }}" alt="{{ $p.histoire.photo_alt }}" loading="lazy">{{ end }}
+    <div class="col" style="gap: 16px">
+      <span class="kicker">{{ partial "icon.html" "star" }}{{ .kicker }}</span>
+      <h2 class="h-sub">{{ .title }}</h2>
+      <p class="muted lead--sm">{{ .lead | markdownify }}</p>
+      {{ with .text }}<p class="muted">{{ . | markdownify }}</p>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with $p.dates }}
+<section class="bg-sable rule-top section--tight">
+  <div class="wrap stack">
+    <h2 class="h-sub">{{ .title }}</h2>
+    <ol class="row grid-4" style="margin: 0; padding: 0; list-style: none">
+      {{- range .items }}
+      <li class="card card--papier date-card" style="padding: 26px"><span class="price">{{ .annee }}</span><span class="muted">{{ .texte | markdownify }}</span></li>
+      {{- end }}
+    </ol>
+  </div>
+</section>
+{{ end }}
+
+{{ with $p.mission }}
+<section id="mission" class="bg-sable section--tight" style="padding-top: 0">
+  <div class="wrap row grid-2" style="gap: 28px">
+    <div class="panel panel--carte">
+      <h2 class="h-card h-card--lg">{{ .mission_title }}</h2>
+      <p>{{ .mission | markdownify }}</p>
+    </div>
+    <div class="panel panel--menthe">
+      <h2 class="h-card h-card--lg">{{ .vision_title }}</h2>
+      <p>{{ .vision | markdownify }}</p>
+      {{ with .valeurs }}<p><strong>{{ $p.mission.valeurs_title }}</strong> {{ delimit . " · " }}</p>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ partial "vague.html" (dict "id" "principes" "de" "#ebdece" "vers" "#1d486a") }}
+{{ with $p.principes }}
+<section class="bg-bleu" style="padding-block: 64px 88px">
+  <div class="wrap stack">
+    <h2 class="h-sub">{{ .title }}</h2>
+    <div class="row grid-3">
+      {{- range $i, $e := .items }}
+      <div class="card" style="background: var(--bleu-nuit); border-color: var(--bleu-ombre); color: #fff; padding: 26px; gap: 8px">
+        <span class="num" aria-hidden="true" style="font-size: 40px">{{ add $i 1 }}</span>
+        <h3 class="h-card">{{ $e.title }}</h3>
+        <p style="color: var(--sur-bleu)">{{ $e.text }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with $p.CA }}
+<section id="ca" class="bg-papier section" style="padding-block: 80px">
+  <div class="wrap stack" style="gap: 32px">
+    <div class="col" style="gap: 12px; max-width: 680px">
+      <span class="kicker">{{ partial "icon.html" "star" }}{{ .kicker }}</span>
+      <h2 class="h-sub">{{ .title }}</h2>
+      <p class="muted lead--sm">{{ .subtitle }}</p>
+    </div>
+    <div class="row grid-5" style="gap: 16px">
+      {{- range .member }}
+      <div class="card team-card" style="padding: 22px; gap: 4px"><small>{{ .position }}</small><strong>{{ .name }}</strong>{{ with .email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}</div>
+      {{- end }}
+    </div>
+    <div class="row grid-2" style="gap: 28px">
+      {{ with $p.aga }}
+      <div class="panel panel--menthe panel--sm" id="documents">
+        <h3 class="h-card">{{ .title }}</h3>
+        <p>{{ .text }}</p>
+        {{- range .liens }}
+        <a href="{{ .url }}" style="font-weight: 700; color: var(--vert); padding: 2px 0">{{ .label }}</a>
+        {{- end }}
+      </div>
+      {{ end }}
+      {{ with $p.emploi }}
+      <div class="panel panel--carte panel--sm">
+        <h3 class="h-card">{{ .title }}</h3>
+        <p>{{ .text }}</p>
+        <a href="{{ i18n "url_contact" }}#ecrire" style="font-weight: 700; padding-top: 4px">{{ .link }}</a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with $p.cta }}
+<section class="bg-sable rule-top section--tight" style="padding-bottom: 88px">
+  <div class="wrap wrap--narrow col" style="gap: 16px; align-items: center; text-align: center">
+    <h2 class="h-sub">{{ .title }}</h2>
+    <p class="muted lead--sm">{{ .text }}</p>
+    <div class="btn-row"><a class="btn" href="{{ i18n "url_member" }}">{{ i18n "become_member" }}</a></div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

@@ -1,0 +1,9 @@
+{{- $n := len site.Data.catalogue.articles -}}
+<div class="cta-catalogue">
+  <div class="col" style="gap: 8px">
+    <span class="kicker">{{ partial "icon.html" "star" }}{{ i18n "catalogue_kicker" }}</span>
+    <h2 class="h-sub">{{ i18n "catalogue_title" }}</h2>
+    <p class="muted">{{ i18n "catalogue_text" }}</p>
+  </div>
+  <a class="btn btn--vert" href="{{ i18n "url_catalogue" }}">{{ i18n "catalogue_btn" }} {{ partial "icon.html" "arrow" }}</a>
+</div>

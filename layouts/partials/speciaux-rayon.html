@@ -1,0 +1,17 @@
+{{- /* Section « Spéciaux » d'une page de rayon ; masquée s'il n'y en a pas. Contexte : dict "rayon" "titre" */ -}}
+{{- $s := site.Data.speciaux -}}
+{{- $items := where ($s.items | default slice) "rayon" .rayon -}}
+{{- if $items }}
+<section id="speciaux" class="bg-papier section section--flush-top">
+  <div class="wrap stack">
+    <div class="head-row">
+      <div class="col" style="gap: 8px">
+        <h2 class="h-sub">{{ .titre }}</h2>
+        {{ if and $s.du $s.au }}<p class="muted">{{ printf (i18n "specials_valid") (time.Format ":date_long" $s.du) (time.Format ":date_long" $s.au) }}</p>{{ end }}
+      </div>
+      <a class="link-strong" href="{{ i18n "url_home" }}#speciaux">{{ i18n "specials_all" }}</a>
+    </div>
+    {{ partial "speciaux.html" (dict "items" $items) }}
+  </div>
+</section>
+{{- end }}

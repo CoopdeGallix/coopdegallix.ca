@@ -1,6 +1,6 @@
 ---
 title: Annonce d'une soirée bénéfice le 28 janvier 2023
-subtitle: Bonjour - Hello - Kuei!
+subtitle: 
 summary: Parce qu'il est temps de se retrouver en communauté pour vous mettre à jour sur les développements de la Coop et célébrer l'année 2023 en chansons!
 featured: false
 date: 2023-01-09

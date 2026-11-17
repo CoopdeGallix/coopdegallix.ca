@@ -1,0 +1,91 @@
+{{ define "main" }}
+{{- $m := site.Data.magasin -}}
+{{- $p := .Params -}}
+{{- $items := where (site.Data.speciaux.items | default slice) "rayon" $p.rayon -}}
+
+<section class="page-hero bg-{{ $p.couleur | default "bleu" }}">
+  <div class="wrap">
+    <div class="page-hero__text">
+      {{ partial "crumbs.html" . }}
+      <h1 class="h-page">{{ .Title }}</h1>
+      <p class="lead" style="max-width: 560px">{{ $p.lead }}</p>
+      <div class="btn-row">
+        {{ if $p.commande }}<a class="btn btn--sable" href="#commande">{{ $p.commande.btn }}</a>
+        {{ else if $items }}<a class="btn btn--sable" href="#speciaux">{{ $p.btn_speciaux }}</a>{{ end }}
+        {{ with $m.telephone }}<a class="btn btn--ghost" href="{{ partial "fn/tel.html" . }}">{{ i18n "call_store" }}</a>{{ end }}
+      </div>
+    </div>
+    {{ with $p.photo }}<div class="page-hero__media"><img class="photo photo--43" src="{{ . }}" alt="{{ $p.photo_alt }}"></div>{{ end }}
+  </div>
+</section>
+
+<section id="rayon" class="bg-papier section">
+  <div class="wrap stack" style="gap: 32px">
+    <div class="head-row">
+      <div class="col" style="gap: 12px; max-width: 680px">
+        <span class="kicker">{{ partial "icon.html" "star" }}{{ $p.allees.kicker }}</span>
+        <h2 class="h-sub">{{ $p.allees.title }}</h2>
+      </div>
+      <a class="btn btn--light" href="{{ i18n "url_catalogue" }}">{{ i18n "catalogue_all" }} {{ partial "icon.html" "arrow" }}</a>
+    </div>
+    <div class="row grid-4" style="gap: 16px">
+      {{- range $p.allees.items }}
+      {{- if .cat }}
+      <a class="card card--lift" href="{{ i18n "url_catalogue" }}#{{ .cat }}"><h3 class="h-card">{{ .nom }}</h3><p>{{ .texte }}</p><span class="arrow" style="margin-top: auto; padding-top: 6px">{{ i18n "catalogue_see" }} {{ partial "icon.html" "arrow" }}</span></a>
+      {{- else }}
+      <div class="card"><h3 class="h-card">{{ .nom }}</h3><p>{{ .texte }}</p></div>
+      {{- end }}
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{ with $p.panneaux }}
+<section class="bg-papier section section--flush-top">
+  <div class="wrap row grid-2" style="gap: 28px">
+    {{- range . }}
+    <div class="panel panel--{{ .style }}"{{ if not .photo }} style="position: relative; overflow: hidden; min-height: 300px"{{ end }}>
+      {{ if not .photo }}<img class="tile__motif" src="/img/brand/arbres-clair.svg" alt="" aria-hidden="true">{{ end }}
+      {{ with .photo }}<img class="photo photo--43" src="{{ . }}" alt="{{ $p.photo_locaux_alt }}" loading="lazy" style="margin-bottom: 8px">{{ end }}
+      <h2 class="h-sub">{{ .title }}</h2>
+      {{ with .lead }}<p class="lead--sm">{{ . }}</p>{{ end }}
+      {{ with .text }}<p>{{ . }}</p>{{ end }}
+      {{ with .note }}<p style="font-size: 15px; margin-top: 8px">{{ . }}</p>{{ end }}
+      {{ with .btn }}<div class="btn-row"><a class="btn btn--vert" href="{{ i18n "url_contact" }}#ecrire">{{ . }}</a></div>{{ end }}
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with $p.commande }}
+<section id="commande" class="bg-papier section section--flush-top">
+  <div class="wrap">
+    <div class="panel panel--bleu" style="flex-direction: row; flex-wrap: wrap; gap: 32px 48px; align-items: center; padding: clamp(28px, 5vw, 56px)">
+      <div class="col" style="flex: 999 1 420px; gap: 12px">
+        <h2 class="h-sub">{{ .title }}</h2>
+        <p class="lead--sm">{{ .text }}</p>
+        {{ with .note }}<p>{{ . }}</p>{{ end }}
+      </div>
+      <div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 16px">
+        {{ with $m.telephone }}<a class="btn btn--sable" href="{{ partial "fn/tel.html" . }}">{{ . }}</a>{{ end }}
+        {{ with $m.courriel }}<a class="btn btn--ghost" href="mailto:{{ . }}">{{ i18n "write_store" }}</a>{{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ partial "speciaux-rayon.html" (dict "rayon" $p.rayon "titre" $p.speciaux_title) }}
+
+<section class="bg-sable rule-top section--tight" style="padding-bottom: 88px">
+  <div class="wrap stack">
+    <h2 class="h-sub">{{ $p.aussi.title }}</h2>
+    <div class="row grid-2">
+      {{- range $p.aussi.items }}
+      <a class="card card--papier card--lift" href="{{ if .ancre }}{{ i18n "url_catalogue" }}#{{ .ancre }}{{ else }}{{ i18n .url }}{{ end }}" style="padding: 28px; gap: 8px"><h3 class="h-card" style="font-size: 26px">{{ .title }}</h3><p>{{ .text }}</p><span class="arrow">{{ .link }} {{ partial "icon.html" "arrow" }}</span></a>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{ end }}

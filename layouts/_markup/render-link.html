@@ -1,0 +1,4 @@
+{{- /* Liens Markdown : laisse passer tel: et mailto: (sinon Hugo les remplace par #ZgotmplZ). */ -}}
+{{- $u := urls.Parse .Destination -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if eq $u.Scheme "http" "https" }} rel="noopener"{{ end }}>{{ .Text }}</a>
+{{- /* chomp */ -}}

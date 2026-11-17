@@ -1,0 +1,108 @@
+tagline: Co-operative general store
+home: Home
+skip: Skip to content
+nav_main: Main navigation
+nav_footer: Footer links
+nav_breadcrumb: Breadcrumb
+menu_toggle: Open or close the menu
+logo_alt: Coop de Gallix logo
+become_member: Become a member
+
+open_today: "Open today:"
+open_daily: "Open every day:"
+closed_today: Closed today
+closed: Closed
+today: Today
+hours_caption: Opening hours
+store_hours: Store hours
+hours_sep: " to "
+
+at_the_pump: At the pump
+cents_per_litre: ¢ per litre
+price_updated: "Updated %s. The price shown at the pump prevails."
+
+specials_week: This week's specials
+specials_valid: "Valid from %s to %s."
+specials_stock: While supplies last.
+specials_flyer: Full flyer (PDF)
+specials_empty_title: Specials change every week.
+specials_empty: They are posted in store and announced on our Facebook page.
+specials_follow: See our Facebook page
+specials_all: All of this week's specials
+specials_grocery: Grocery specials
+specials_hardware: Hardware specials
+member_price: "Member price:"
+dept_epicerie: Groceries
+dept_quincaillerie: Hardware
+
+call_store: Call the store
+write_store: Email the store
+directions: Get directions
+all_hours: All hours
+map_title: Map – location of Coop de Gallix
+
+address: Address
+phone: Phone
+email: Email
+
+news_all: All news
+news_read: Read more
+news_published: "Published %s"
+news_prev: Previous post
+news_next: Next post
+news_back: Back to the bulletin board
+news_fr_only: News is published in French.
+
+footer_about: Gallix's co-operative general store. Groceries, hardware and gas, serving the village.
+footer_store: Store
+footer_coop: The co-op
+footer_contact: Contact
+footer_gas: Gas and propane
+footer_specials: Weekly specials
+footer_story: Our story
+footer_board: Bulletin board
+footer_documents: Documents
+footer_hours: Hours and directions
+footer_newsletter: Newsletter
+footer_rights: All rights reserved.
+footer_nonprofit: Solidarity co-operative
+other_lang: Français
+
+form_name: Name
+form_first_name: First name
+form_email: Email
+form_phone_optional: Phone (optional)
+form_phone: Phone
+form_email_optional: Email (optional)
+form_subject: Subject
+form_message: Message
+form_send: Send message
+form_address: Address
+form_city: City
+form_postal: Postal code
+form_send_request: Send my request
+
+e404_title: Page not found
+e404_text: The link you followed seems to be broken. If you think this is a mistake, please let us know.
+e404_home: Back to home
+
+# Page addresses (used by the header, footer and buttons)
+url_home: /en/
+url_groceries: /en/groceries/
+url_hardware: /en/hardware/
+url_gas: /en/gas/
+url_coop: /en/the-coop/
+url_member: /en/membership/
+url_contact: /en/contact/
+url_news: /nouvelles/
+url_documents: /documents/
+url_success: /en/succes/
+url_catalogue: /en/catalogue/
+
+catalogue: Catalogue
+catalogue_kicker: Before you leave home
+catalogue_title: See what we carry, make your list.
+catalogue_text: More than 2,500 items in store, sorted by aisle. Check off what you need and print your shopping list.
+catalogue_btn: Open the catalogue
+catalogue_see: See the items
+catalogue_all: Browse the whole catalogue
