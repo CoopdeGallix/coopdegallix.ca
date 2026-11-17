@@ -2,7 +2,7 @@
 {{- $m := site.Data.magasin -}}
 {{- $p := .Params -}}
 
-<section class="page-hero bg-menthe rule-bottom">
+<section class="page-hero bg-menthe">
   <div class="wrap">
     <div class="page-hero__text">
       {{ partial "crumbs.html" . }}
@@ -30,7 +30,7 @@
   </div>
 </section>
 
-<section class="bg-sable rule-top rule-bottom section--tight">
+<section class="bg-sable section--tight">
   <div class="wrap stack" style="gap: 32px">
     <h2 class="h-sub">{{ $p.etapes.title }}</h2>
     <ol class="row grid-3" style="margin: 0; padding: 0; list-style: none">
@@ -102,7 +102,7 @@
 {{ end }}
 
 {{ with $p.FAQ }}
-<section id="questions" class="bg-sable rule-top section--tight" style="padding-bottom: 88px">
+<section id="questions" class="bg-sable section--tight" style="padding-bottom: 88px">
   <div class="wrap wrap--narrow stack" style="gap: 24px">
     <h2 class="h-sub">{{ .title }}</h2>
     <div class="faq">

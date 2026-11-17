@@ -4,7 +4,7 @@ translationKey: coop
 layout: coop
 hero:
   title: Un commerce qui appartient à Gallix.
-  lead: La Coop de Gallix est une coopérative de solidarité. Elle existe pour garder un magasin général ouvert au village, pas pour enrichir des actionnaires.
+  lead: La Coop de Gallix est une coopérative de solidarité à but non lucratif. Elle existe en tant que commerce de proximité offrant des aliments frais au village et s'investir dans sa communauté.
 
 histoire:
   kicker: Notre histoire
