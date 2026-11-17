@@ -92,13 +92,18 @@ CA:
     text: |
       \"*Étant citoyen de Gallix depuis au moins 10 ans, je considère 3 éléments importants à un village: une école, une église et … une épicerie! Ces édifices, au coeur d'un village, rassemblent la communauté, attirent de nouveaux résidants et permettent l'épanouissement de tous. C'est ainsi avec beaucoup d'enthousiasme que je participe au conseil d'administration dont les efforts vont permettre d'ériger le bâtiment manquant!*\"
     email: ca@coopdegallix.ca
-  - name: Claude Mallet
-    position: Représentant des membres de soutien
-    img: /img/team/cm.jpg
+  - name: Poste à combler
+    position: Administrateur
+    img: /img/team/avatar.png
     text: |
-      \"*Étant citoyen de Gallix depuis au moins 10 ans, je considère 3 éléments importants à un village: une école, une église et … une épicerie! Ces édifices, au coeur d'un village, rassemblent la communauté, attirent de nouveaux résidants et permettent l'épanouissement de tous. C'est ainsi avec beaucoup d'enthousiasme que je participe au conseil d'administration dont les efforts vont permettre d'ériger le bâtiment manquant!*\"
+      \"*À venir*\"
     email: ca@coopdegallix.ca
-
+  - name: Poste à combler
+    position: Administrateur
+    img: /img/team/avatar.png
+    text: |
+      \"*À venir*\"
+    email: ca@coopdegallix.ca
 aga:
   title: Assemblée générale annuelle
   text: Les membres y sont convoqués chaque année. La date est annoncée sur le babillard.
