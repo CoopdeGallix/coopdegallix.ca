@@ -92,8 +92,8 @@ CA:
     text: |
       \"*À venir*\"
     email: ca@coopdegallix.ca
-  - name: Poste à combler
-    position: Administrateur
+  - name: Justine Taschereau
+    position: Administratrice
     img: /img/team/avatar.png
     text: |
       \"*À venir*\"
